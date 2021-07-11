@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f vlog 2020.4_2 2020.12, Dec  5 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maali/ai_accelerator_riscv
+vapb_event_unit
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1626036706
+!i10b 1
+!s100 :L5<kk1R31EUGmISoYTFb1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImMOg`K[AddDnBcN:1gXAj2
+S1
+R0
+Z4 w1621771019
+8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/apb_event_unit.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/apb_event_unit.sv
+!i122 0
+L0 13 156
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4_2;71
+r1
+!s85 0
+31
+Z7 !s108 1626036706.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include//defines_event_unit.sv|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/apb_event_unit.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_event_unit_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include/|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/apb_event_unit.sv|
+!i113 0
+Z8 o-suppress 2583 -quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/apb_event_unit_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -suppress 2583 -quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/apb_event_unit_lib +incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 tCvgOpt 0
+vgeneric_service_unit
+R1
+R2
+!i10b 1
+!s100 JZ04b`<OmH2cE`YQ<@jBk2
+R3
+I<e@>N12891<S974?VKoYj3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/generic_service_unit.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/generic_service_unit.sv
+!i122 1
+L0 13 147
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include//defines_event_unit.sv|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/generic_service_unit.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_event_unit_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include/|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/generic_service_unit.sv|
+!i113 0
+R8
+R9
+R10
+vsleep_unit
+R1
+R2
+!i10b 1
+!s100 [JP^fHa0eTmGoe^BPb30T0
+R3
+I@@?hIH4lE5oGjS2A;3c@o0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/sleep_unit.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/sleep_unit.sv
+!i122 2
+L0 13 212
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include//defines_event_unit.sv|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/sleep_unit.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_event_unit_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/./include/|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_event_unit/sleep_unit.sv|
+!i113 0
+R8
+R9
+R10

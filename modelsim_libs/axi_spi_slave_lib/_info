@@ -1,0 +1,236 @@
+m255
+K4
+z2
+!s11f vlog 2020.4_2 2020.12, Dec  5 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maali/ai_accelerator_riscv
+vaxi_spi_slave
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1626036702
+!i10b 1
+!s100 ooPLMKibkT;R<zOf@DDDM0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IoR_Uk4WEERbNNMJ>?2Wj63
+S1
+R0
+Z4 w1621771019
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/axi_spi_slave.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/axi_spi_slave.sv
+!i122 0
+L0 11 309
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4_2;71
+r1
+!s85 0
+31
+Z7 !s108 1626036702.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/axi_spi_slave.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/axi_spi_slave.sv|
+!i113 0
+Z8 o-suppress 2583 -quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
+vspi_slave_axi_plug
+R1
+R2
+!i10b 1
+!s100 7WJ5i@KjEHW1dRYlC]f:z2
+R3
+IzFD^;o^nzV1]HiMVKD:C82
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv
+!i122 1
+L0 11 304
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_axi_plug.sv|
+!i113 0
+R8
+R9
+vspi_slave_cmd_parser
+R1
+R2
+!i10b 1
+!s100 D7Y5M9XW@37`2`Zf>E1_h3
+R3
+I5RA_;ez>S6i[z1ZBbVNhD2
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv
+!i122 2
+L0 11 150
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_cmd_parser.sv|
+!i113 0
+R8
+R9
+vspi_slave_controller
+R1
+R2
+!i10b 1
+!s100 eVBjRRPbiJBZG1anEN<WQ0
+R3
+IGJ`Cjh[?HSL`McM]LVLd82
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_controller.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_controller.sv
+!i122 3
+L0 16 355
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_controller.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_controller.sv|
+!i113 0
+R8
+R9
+vspi_slave_dc_fifo
+R1
+Z10 !s110 1626036703
+!i10b 1
+!s100 BY<5L9OBM9TYjD?kkCjkY1
+R3
+IlQX0dYa9>S37Cz9XUATS70
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv
+!i122 4
+L0 11 46
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_dc_fifo.sv|
+!i113 0
+R8
+R9
+vspi_slave_regs
+R1
+R10
+!i10b 1
+!s100 9;a1KA5HIeS:ZKc0PSQY92
+R3
+IKU0n1ccQN`GKkTdPYi:A?0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_regs.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_regs.sv
+!i122 5
+L0 11 65
+R5
+R6
+r1
+!s85 0
+31
+Z11 !s108 1626036703.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_regs.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_regs.sv|
+!i113 0
+R8
+R9
+vspi_slave_rx
+R1
+R10
+!i10b 1
+!s100 CC?ff?1g4<21]jf7QBD=o3
+R3
+Ib[2H4<J8[X9[=j[5ReUM_3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_rx.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_rx.sv
+!i122 6
+L0 11 87
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_rx.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_rx.sv|
+!i113 0
+R8
+R9
+vspi_slave_syncro
+R1
+R10
+!i10b 1
+!s100 `NKYQL<9m8hn[81kHY81l3
+R3
+I88z<HSV:iXh1WHJj[OPRI0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_syncro.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_syncro.sv
+!i122 7
+L0 11 43
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_syncro.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_syncro.sv|
+!i113 0
+R8
+R9
+vspi_slave_tx
+R1
+R10
+!i10b 1
+!s100 gzg^b^cXoZ8]U5O_]GiST2
+R3
+Im[XM>LW1b=S7C`:g3dF<g1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_tx.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_tx.sv
+!i122 8
+L0 11 108
+R5
+R6
+r1
+!s85 0
+31
+R11
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_tx.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/axi_spi_slave_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/axi/axi_spi_slave/spi_slave_tx.sv|
+!i113 0
+R8
+R9

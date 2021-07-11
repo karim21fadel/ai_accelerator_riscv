@@ -1,0 +1,1327 @@
+m255
+K4
+z2
+!s11f vlog 2020.4_2 2020.12, Dec  5 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maali/ai_accelerator_riscv
+vahb2pvci
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1626036740
+!i10b 1
+!s100 ;keb^4mDXRccVcjXhO<2P2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iz_e8NZ_YbcUhdeR@M2ZLH0
+!i119 1
+S1
+R0
+Z4 w1621771018
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/ahb2pvci.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/ahb2pvci.v
+!i122 27
+L0 2 53
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4_2;71
+r1
+!s85 0
+31
+Z7 !s108 1626036739.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/ahb2pvci.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/ahb2pvci.v|
+!i113 0
+Z8 o-quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib +incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes +define+RISCV -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 tCvgOpt 0
+vapb2pvci
+R1
+Z11 !s110 1626036739
+!i10b 1
+!s100 oRB;3^i3VNc:ad<0j^8Oa1
+R3
+I0^jH32@AMJ0bI9`5Ri98f2
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/apb2pvci.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/apb2pvci.v
+!i122 26
+L0 2 47
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/apb2pvci.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/apb2pvci.v|
+!i113 0
+R8
+R9
+R10
+YAPB_BUS
+R1
+Z12 !s110 1626036742
+!i10b 1
+!s100 EJDaSg7@D[XjC^df_T[<e0
+R3
+IRo<Peb<G0XUK[e:];T0WF3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/apb_bus.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/apb_bus.sv
+!i122 40
+L0 81 0
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1626036741.000000
+Z14 !s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/apb_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/periph_bus_wrap.sv|
+Z15 !s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/periph_bus_wrap.sv|
+!i113 0
+R8
+R9
+R10
+n@a@p@b_@b@u@s
+vaxi2apb_wrap
+R1
+R12
+!i10b 1
+!s100 n[?lfii7a6R0<RG[fjZQW3
+R3
+InZaJnSoUf3iFNYHHQgM=]2
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/axi2apb_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/axi2apb_wrap.sv
+!i122 41
+L0 13 183
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1626036742.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi2apb_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi2apb_wrap.sv|
+!i113 0
+R8
+R9
+R10
+YAXI_BUS
+R1
+Z17 !s110 1626036743
+!i10b 1
+!s100 1G?nG>iTkndL@92bJ=LT?2
+R3
+I95d?jXeWW>m<0Q2LMOchG3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv
+!i122 46
+L0 23 0
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/core2axi_wrap.sv|
+Z18 !s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/core2axi_wrap.sv|
+!i113 0
+R8
+R9
+R10
+n@a@x@i_@b@u@s
+vaxi_mem_if_SP_wrap
+R1
+R12
+!i10b 1
+!s100 5J^<`IlIHhjgcYz:ZTFT`3
+R3
+IHU]?C5dc=G@?iD?hV5b9H1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_mem_if_SP_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_mem_if_SP_wrap.sv
+!i122 43
+L0 13 102
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_mem_if_SP_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_mem_if_SP_wrap.sv|
+!i113 0
+R8
+R9
+R10
+naxi_mem_if_@s@p_wrap
+vaxi_node_intf_wrap
+R1
+Z19 !s110 1626036741
+!i10b 1
+!s100 joOPg:=i5Fd`BPFnnB_Xc3
+R3
+IPPLWmSY8Kb^KPM6[Uz[;`3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_node_intf_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_node_intf_wrap.sv
+!i122 37
+L0 14 378
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_node_intf_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_node_intf_wrap.sv|
+!i113 0
+R8
+R9
+R10
+vaxi_slice_wrap
+R1
+R12
+!i10b 1
+!s100 gG[FEj^T:NaeEoM@i2Zcl0
+R3
+Ib8>?LEBBF78[8YYZFf9Pk1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_slice_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_slice_wrap.sv
+!i122 45
+L0 12 186
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/axi_slice_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_slice_wrap.sv|
+!i113 0
+R8
+R9
+R10
+vaxi_spi_slave_wrap
+R1
+R12
+!i10b 1
+!s100 b<kBN@LU<AdLo3:4<gMNR0
+R3
+IW99k;N]daQ^e0DM:HXbbe0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_spi_slave_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_spi_slave_wrap.sv
+!i122 42
+L0 12 104
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/axi_spi_slave_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/axi_spi_slave_wrap.sv|
+!i113 0
+R8
+R9
+R10
+vboot_code
+R1
+R2
+!i10b 1
+!s100 29?0]Zd@SIXbM3f7Dk>X<1
+R3
+IJb7BEGSH5b4:V]2]QOCTT0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_code.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_code.sv
+!i122 33
+L0 11 574
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1626036740.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/boot_code.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_code.sv|
+!i113 0
+R8
+R9
+R10
+vboot_rom_wrap
+R1
+R2
+!i10b 1
+!s100 GS39WM>2Ti93Ok_9PUR=00
+R3
+I_20hF`n4OP2OaS^IL=R=:2
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_rom_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_rom_wrap.sv
+!i122 32
+L0 14 23
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_rom_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/boot_rom_wrap.sv|
+!i113 0
+R8
+R9
+R10
+vclk_rst_gen
+R1
+R12
+!i10b 1
+!s100 ilGVcdfQ:@LCAR3fGS;JJ0
+R3
+IAVOhk3h]b684`lnmFjThI2
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/clk_rst_gen.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/clk_rst_gen.sv
+!i122 44
+L0 12 90
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/clk_rst_gen.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/clk_rst_gen.sv|
+!i113 0
+R8
+R9
+R10
+vcluster_clock_gating
+R1
+Z21 !s110 1626036735
+!i10b 1
+!s100 E`B^REjLB39J40e_IljdA3
+R3
+IgQ9UQ@H74:cDKT5<GB8=:1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_gating.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_gating.sv
+!i122 0
+Z22 L0 11 24
+R5
+R6
+r1
+!s85 0
+31
+Z23 !s108 1626036735.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_gating.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_gating.sv|
+!i113 0
+R8
+R10
+vcluster_clock_inverter
+R1
+R21
+!i10b 1
+!s100 V<d3ic;KW_PZnaeQnT?iF0
+R3
+IIdCN<i?7m]BOlo<Q@l9ff0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_inverter.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_inverter.sv
+!i122 2
+Z24 L0 11 9
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_inverter.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_inverter.sv|
+!i113 0
+R8
+R10
+vcluster_clock_mux2
+R1
+R21
+!i10b 1
+!s100 L`jbz;HDBMU1CMK8z3Zc83
+R3
+I[ASmmFdUl1HWG<kFHkUm=2
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_mux2.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_mux2.sv
+!i122 3
+Z25 L0 11 17
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_mux2.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/cluster_clock_mux2.sv|
+!i113 0
+R8
+R10
+vcore2axi_wrap
+R1
+R17
+!i10b 1
+!s100 bATYYVfKgzbTiXFe9]:TV0
+R3
+Ii?ALWcB<0gTMg7L6?U?Lm0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/core2axi_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/core2axi_wrap.sv
+!i122 46
+L0 14 102
+R5
+R6
+r1
+!s85 0
+31
+R16
+Z26 !s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/core2axi_wrap.sv|
+R18
+!i113 0
+R8
+R9
+R10
+vcore_region
+R1
+R2
+!i10b 1
+!s100 g=aJX_MeD9WJcCTc9P:6Y2
+R3
+IckJk@8CM5zEB?c0XZccez2
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv
+!i122 30
+L0 15 709
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv|
+!i113 0
+R8
+R9
+R10
+YDEBUG_BUS
+R1
+R19
+!i10b 1
+!s100 G35<k1eA8C5DVBMNlGKAV3
+R3
+IVInnSaGldb7=Mh8Ygn_SH3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/debug_bus.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/debug_bus.sv
+!i122 39
+L0 16 0
+R5
+R6
+r1
+!s85 0
+31
+R13
+Z27 !s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/debug_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/apb_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv|
+Z28 !s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv|
+!i113 0
+R8
+R9
+R10
+n@d@e@b@u@g_@b@u@s
+vgeneric_fifo
+R1
+Z29 !s110 1626036736
+!i10b 1
+!s100 <QL@_R90GRo@:gTk8_X7`0
+R3
+I?W3ON^h6YnhPOf1N4Znbc3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/generic_fifo.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/generic_fifo.sv
+!i122 6
+L0 11 242
+R5
+R6
+r1
+!s85 0
+31
+Z30 !s108 1626036736.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/generic_fifo.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/generic_fifo.sv|
+!i113 0
+R8
+R10
+vinstr_ram_wrap
+R1
+R19
+!i10b 1
+!s100 lLiacShL^?JP5BLOFN@gL0
+R3
+IYNBTRd4Ei<=]57R6Heg^G0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/instr_ram_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/instr_ram_wrap.sv
+!i122 34
+L0 14 74
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/instr_ram_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/instr_ram_wrap.sv|
+!i113 0
+R8
+R9
+R10
+vm3s001fg
+R1
+Z31 !s110 1626036737
+!i10b 1
+!s100 XEbDG]KWDQW;oY@fm<zXA3
+R3
+Id=4NK6Nz^Sf8gcGA<=B9B0
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s001fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s001fg.v
+!i122 10
+L0 53 77
+R5
+R6
+r1
+!s85 0
+31
+R30
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s001fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s001fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s002fg
+R1
+R31
+!i10b 1
+!s100 ]10[jJMnjh>[]klNIo6<60
+R3
+IY5U^k0]=?8QGhAYV>1^fn0
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s002fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s002fg.v
+!i122 11
+L0 73 102
+R5
+R6
+r1
+!s85 0
+31
+Z32 !s108 1626036737.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s002fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s002fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s003fg
+R1
+R31
+!i10b 1
+!s100 2]JM=P;BO?OZEZ;mP3Ce@2
+R3
+If7@_@5kzXfg1K0fGZ>hLm3
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s003fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s003fg.v
+!i122 12
+L0 54 140
+R5
+R6
+r1
+!s85 0
+31
+R32
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s003fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s003fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s004fg
+R1
+R31
+!i10b 1
+!s100 TWLB:KkDNOe?Tdc>AdELW0
+R3
+II_Y4_a7>GN=8lnH18zidm1
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s004fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s004fg.v
+!i122 13
+L0 79 137
+R5
+R6
+r1
+!s85 0
+31
+R32
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s004fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s004fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s005fg
+R1
+R31
+!i10b 1
+!s100 ^5gi?10iz6RE?BTc:zo6c2
+R3
+I:mo]h?mGOBCJIU4PC>n^E3
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s005fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s005fg.v
+!i122 14
+L0 39 87
+R5
+R6
+r1
+!s85 0
+31
+R32
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s005fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s005fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s006fg
+R1
+R29
+!i10b 1
+!s100 Q6^V[3TbWSMXHYj?DPzGM0
+R3
+If<U26KfY7dgHaH>z7[Vci0
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s006fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s006fg.v
+!i122 9
+L0 46 81
+R5
+R6
+r1
+!s85 0
+31
+R30
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s006fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s006fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s007fg
+R1
+R31
+!i10b 1
+!s100 :Ea<ll4l9i@j<zIZ4ONUP0
+R3
+IWGbV;4RZCiA95aQ[Ek]LM0
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s007fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s007fg.v
+!i122 15
+L0 45 59
+R5
+R6
+r1
+!s85 0
+31
+R32
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s007fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s007fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s008fg
+R1
+Z33 !s110 1626036738
+!i10b 1
+!s100 9DVM<i7fTni?fXUh7N[Pb3
+R3
+I7Vhj^QT`kMG8ac_:c68hU1
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s008fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s008fg.v
+!i122 16
+L0 50 63
+R5
+R6
+r1
+!s85 0
+31
+R32
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s008fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s008fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s009fg
+R1
+R33
+!i10b 1
+!s100 WE?D63A;:gk9VLifHYc4i3
+R3
+Iz>3O74gOQZQ5SYdQAc7l81
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s009fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s009fg.v
+!i122 17
+L0 71 146
+R5
+R6
+r1
+!s85 0
+31
+Z34 !s108 1626036738.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s009fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s009fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s010fg
+R1
+R33
+!i10b 1
+!s100 RjFe[8Ngi1F9X@c^^Q`H90
+R3
+IMJdPnY=5YdAMYRaM8VQK63
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s010fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s010fg.v
+!i122 18
+L0 67 120
+R5
+R6
+r1
+!s85 0
+31
+R34
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s010fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s010fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s011fg
+R1
+R33
+!i10b 1
+!s100 WXf828Hf?S`?58U;@e^D^3
+R3
+I^;E5fEhf0c=Mn`RAN2hOT3
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s011fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s011fg.v
+!i122 19
+L0 69 59
+R5
+R6
+r1
+!s85 0
+31
+R34
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s011fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s011fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s012fg
+R1
+R33
+!i10b 1
+!s100 9;02]lzG]an]NJP1Nli@a3
+R3
+IkS;7_^gPDgBN@V;6hWGUK1
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s012fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s012fg.v
+!i122 20
+L0 39 93
+R5
+R6
+r1
+!s85 0
+31
+R34
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s012fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s012fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s013fg
+R1
+R11
+!i10b 1
+!s100 3AP[Z>hI<:=d6_^C@2GWb3
+R3
+Ij1VZ^5XKlhT2QNFZTDWS[2
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s013fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s013fg.v
+!i122 21
+L0 54 120
+R5
+R6
+r1
+!s85 0
+31
+R34
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s013fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s013fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s014fg
+R1
+R11
+!i10b 1
+!s100 JojS7To4g4800TMUe`_T;3
+R3
+IeEHMjeSkHlL0Fd=]dgL431
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s014fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s014fg.v
+!i122 22
+L0 51 55
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s014fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s014fg.v|
+!i113 0
+R8
+R9
+R10
+vm3s015fg
+R1
+R11
+!i10b 1
+!s100 gaQ4:DcNB:UTDRL:A<VCh3
+R3
+I5E^b[5dfK53<XjImfgkN;2
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s015fg.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s015fg.v
+!i122 23
+L0 55 87
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_state.v|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s015fg.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/m3s015fg.v|
+!i113 0
+R8
+R9
+R10
+vmcan2
+R1
+R11
+!i10b 1
+!s100 VicBFQ:lg=N5P?Zl][b]O3
+R3
+IIAQYN_9<FO^DD=U8YQV4d0
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2.v
+!i122 24
+L0 65 140
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2.v|
+!i113 0
+R8
+R9
+R10
+vmcan2_ahb_pvci_wrapper
+R1
+R2
+!i10b 1
+!s100 oW@fz:bHmnJ<LHFNTSTJ62
+R3
+I1A]JSlE]kTh7@oHWJ2l6V3
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_ahb_pvci_wrapper.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_ahb_pvci_wrapper.v
+!i122 28
+L0 1 73
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_ahb_pvci_wrapper.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_ahb_pvci_wrapper.v|
+!i113 0
+R8
+R9
+R10
+vmcan2_apb_pvci_wrapper
+R1
+R2
+!i10b 1
+!s100 2Ogd0RMHPfG5[47jDWmFU1
+R3
+IndnNd1WZdSS94=nFRQWWJ2
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_apb_pvci_wrapper.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_apb_pvci_wrapper.v
+!i122 29
+L0 1 112
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_apb_pvci_wrapper.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_apb_pvci_wrapper.v|
+!i113 0
+R8
+R9
+R10
+vmcan2_io
+R1
+R11
+!i10b 1
+!s100 QWj]TSKTDMYd2XGCbR9Td3
+R3
+I?WUi`PNGn?E8MM46[c?3D3
+!i119 1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_io.v
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_io.v
+!i122 25
+L0 51 90
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_io.v|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/can/mcan2_io.v|
+!i113 0
+R8
+R9
+R10
+vperiph_bus_wrap
+R1
+R12
+!i10b 1
+!s100 1YgIdPec6YLJd:o0ebz>k0
+R3
+IOgjWZPkmK6X[eHSeR2KCb0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/periph_bus_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/periph_bus_wrap.sv
+!i122 40
+L0 13 112
+R5
+R6
+r1
+!s85 0
+31
+R13
+R14
+R15
+!i113 0
+R8
+R9
+R10
+vperipherals
+R1
+R19
+!i10b 1
+!s100 adTf_6T`c16Y606RLTG:=3
+R3
+I?7RzgN_cAWOgdeoZA^7A@3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv
+!i122 39
+L0 16 623
+R5
+R6
+r1
+!s85 0
+31
+R13
+R27
+R28
+!i113 0
+R8
+R9
+R10
+vpulp_clock_gating
+R1
+R21
+!i10b 1
+!s100 lIVN?cTz?DC=FeTcU19zK2
+R3
+IPd97DS@MoCMKCzX`Bd21;3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_gating.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_gating.sv
+!i122 1
+R22
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_gating.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_gating.sv|
+!i113 0
+R8
+R10
+vpulp_clock_inverter
+R1
+R21
+!i10b 1
+!s100 4;2azRiClKg0724cVi2za2
+R3
+I05FE8M2;C4?L6mZEdXh911
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_inverter.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_inverter.sv
+!i122 4
+R24
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_inverter.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_inverter.sv|
+!i113 0
+R8
+R10
+vpulp_clock_mux2
+R1
+R29
+!i10b 1
+!s100 =hiU[7jE<Rhm;1:iHVlE^3
+R3
+I;Do7Lg6c05EOT^MjQUc3>1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_mux2.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_mux2.sv
+!i122 5
+R25
+R5
+R6
+r1
+!s85 0
+31
+R23
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_mux2.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/pulp_clock_mux2.sv|
+!i113 0
+R8
+R10
+vpulpino_top
+R1
+R19
+!i10b 1
+!s100 U;1EVANX26nI>T0Hn@^Za0
+R3
+I^@<22UkCjKnGoM0_Q;d;i1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/pulpino_top.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/pulpino_top.sv
+!i122 38
+L0 20 309
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/debug_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/includes/axi_bus.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/pulpino_top.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/pulpino_top.sv|
+!i113 0
+R8
+R9
+R10
+vram_mux
+R1
+R19
+!i10b 1
+!s100 EVB_YIAAIZAHlMh9`ZVge0
+R3
+Iofc[^=CnN=<2d1;b4BWLT0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/ram_mux.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/ram_mux.sv
+!i122 36
+L0 11 155
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/ram_mux.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/ram_mux.sv|
+!i113 0
+R8
+R9
+R10
+vrandom_stalls
+R1
+R2
+!i10b 1
+!s100 N;e>W_9ICTG4fR;TkU4H02
+R3
+I8?0ioz2@N__@W48>77UGH1
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/random_stalls.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/random_stalls.sv
+!i122 31
+L0 11 173
+R5
+R6
+r1
+!s85 0
+31
+R20
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/random_stalls.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/random_stalls.sv|
+!i113 0
+R8
+R9
+R10
+vrstgen
+R1
+R29
+!i10b 1
+!s100 oA0NccEhiOI`IJgC2>d4S3
+R3
+I2g^>ZFJQj<LlT26K__R<M3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/rstgen.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/rstgen.sv
+!i122 7
+L0 11 57
+R5
+R6
+r1
+!s85 0
+31
+R30
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/rstgen.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/rstgen.sv|
+!i113 0
+R8
+R10
+vsp_ram
+R1
+R29
+!i10b 1
+!s100 _R26eiQ8:S5FQ=E5lbgb<3
+R3
+IVm8^RJ_<;m=72<jHSiT9N0
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/components/sp_ram.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/components/sp_ram.sv
+!i122 8
+L0 11 50
+R5
+R6
+r1
+!s85 0
+31
+R30
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/components/sp_ram.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|/home/maali/ai_accelerator_riscv/risc-v/rtl/components/sp_ram.sv|
+!i113 0
+R8
+R10
+vsp_ram_wrap
+R1
+R19
+!i10b 1
+!s100 f_]Y2B6:ijYFBeP0Y7@AV2
+R3
+I<5:j9N7KgJU;=9]`A6O[K3
+S1
+R0
+R4
+8/home/maali/ai_accelerator_riscv/risc-v/rtl/sp_ram_wrap.sv
+F/home/maali/ai_accelerator_riscv/risc-v/rtl/sp_ram_wrap.sv
+!i122 35
+L0 13 80
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/maali/ai_accelerator_riscv/risc-v/rtl/includes/config.sv|/home/maali/ai_accelerator_riscv/risc-v/rtl/sp_ram_wrap.sv|
+!s90 -quiet|-sv|-svinputport=net|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/pulpino_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/rtl/includes|+define+RISCV|/home/maali/ai_accelerator_riscv/risc-v/rtl/sp_ram_wrap.sv|
+!i113 0
+R8
+R9
+R10

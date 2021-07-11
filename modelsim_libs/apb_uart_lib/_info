@@ -1,0 +1,527 @@
+m255
+K4
+z2
+!s11e vcom 2020.4_2 2020.12, Dec  5 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maali/ai_accelerator_riscv
+Eapb_uart
+Z1 w1621771019
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z5 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/apb_uart.vhd
+Z6 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/apb_uart.vhd
+l0
+L37 1
+VojXTRQ:B[;dU]CJMNSUb>2
+!s100 [2<fo8f[TDYRZQm55o0N93
+Z7 OL;C;2020.4_2;71
+32
+Z8 !s110 1626036728
+!i10b 1
+Z9 !s108 1626036727.000000
+Z10 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/apb_uart.vhd|
+Z11 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/apb_uart.vhd|
+!i113 0
+Z12 o-suppress 2583 -quiet -work /home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 8 apb_uart 0 22 ojXTRQ:B[;dU]CJMNSUb>2
+!i122 0
+l374
+L66 966
+V5=zO]dabi=6_WX6ZCH<>T1
+!s100 `=W:P[hagAF33`Q33f^FW3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Eslib_clock_div
+R1
+R2
+R3
+R4
+!i122 1
+R0
+Z14 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_clock_div.vhd
+Z15 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_clock_div.vhd
+l0
+Z16 L29 1
+VN5<FF:g9EgQIa_5E7?n8k0
+!s100 MMkNn?B9nbLjZnd>l93X82
+R7
+32
+R8
+!i10b 1
+Z17 !s108 1626036728.000000
+Z18 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_clock_div.vhd|
+Z19 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_clock_div.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 14 slib_clock_div 0 22 N5<FF:g9EgQIa_5E7?n8k0
+!i122 1
+l46
+L41 29
+Vc0Fj>1oanGm<B1C^YHg1X3
+!s100 YF:Dc4oj6j=J>bc7NA0SA3
+R7
+32
+R8
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R12
+R13
+Eslib_counter
+R1
+R2
+R3
+R4
+!i122 2
+R0
+Z20 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_counter.vhd
+Z21 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_counter.vhd
+l0
+R16
+VUDQcKkaNf93OoEY_G`6EK1
+!s100 ZaUbW]WbFM?Yo1InA2Q_M1
+R7
+32
+R8
+!i10b 1
+R17
+Z22 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_counter.vhd|
+Z23 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_counter.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 12 slib_counter 0 22 UDQcKkaNf93OoEY_G`6EK1
+!i122 2
+l48
+L46 31
+Ve:jgo6S1`J@Ve2P?1iSi[2
+!s100 Dli>`VD:Bf]Jlh@Z9J[zj3
+R7
+32
+R8
+!i10b 1
+R17
+R22
+R23
+!i113 0
+R12
+R13
+Eslib_edge_detect
+R1
+R2
+R3
+R4
+!i122 3
+R0
+Z24 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_edge_detect.vhd
+Z25 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_edge_detect.vhd
+l0
+Z26 L28 1
+V1mXzjFi8<gO7BdHLOAzX`2
+!s100 R95d@G3W<A8B69ZP?bA@o0
+R7
+32
+R8
+!i10b 1
+R17
+Z27 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_edge_detect.vhd|
+Z28 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_edge_detect.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 16 slib_edge_detect 0 22 1mXzjFi8<gO7BdHLOAzX`2
+!i122 3
+l40
+L38 18
+VcRDF0@2GHcM4o2g2HlOab2
+!s100 zca8=CdW7ELi2YILHW3zg3
+R7
+32
+R8
+!i10b 1
+R17
+R27
+R28
+!i113 0
+R12
+R13
+Eslib_fifo
+R1
+R2
+R3
+R4
+!i122 4
+R0
+Z29 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_fifo.vhd
+Z30 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_fifo.vhd
+l0
+R16
+Vo=lkPeTCY;YjOR9m^Ndff1
+!s100 VM:U`coZh[>kYdWJz<F`@1
+R7
+32
+R8
+!i10b 1
+R17
+Z31 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_fifo.vhd|
+Z32 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_fifo.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 9 slib_fifo 0 22 o=lkPeTCY;YjOR9m^Ndff1
+!i122 4
+l59
+L48 84
+VBbjADmhT>NCW;3mCz22:@2
+!s100 UFJ@J<aa_NCz`e:0ACB4M2
+R7
+32
+R8
+!i10b 1
+R17
+R31
+R32
+!i113 0
+R12
+R13
+Eslib_input_filter
+R1
+R2
+R3
+R4
+!i122 5
+R0
+Z33 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_filter.vhd
+Z34 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_filter.vhd
+l0
+R26
+Vbm^GZfWoLRkM;^6f;>f5;1
+!s100 >oNX^fWhdS@iN^<F0e_fi3
+R7
+32
+R8
+!i10b 1
+R17
+Z35 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_filter.vhd|
+Z36 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_filter.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 17 slib_input_filter 0 22 bm^GZfWoLRkM;^6f;>f5;1
+!i122 5
+l43
+L41 28
+Vgk=hm[5gXnF=[L767W;hj3
+!s100 Y;lMD:fXnoRA]^V5X8Ohf3
+R7
+32
+R8
+!i10b 1
+R17
+R35
+R36
+!i113 0
+R12
+R13
+Eslib_input_sync
+R1
+R2
+R3
+R4
+!i122 6
+R0
+Z37 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_sync.vhd
+Z38 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_sync.vhd
+l0
+R26
+VbKCVO^IiZ68eJ7M8][8Hm0
+!s100 D3`NbI_2J0?NN6WcaYI2n0
+R7
+32
+Z39 !s110 1626036729
+!i10b 1
+R17
+Z40 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_sync.vhd|
+Z41 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_input_sync.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 15 slib_input_sync 0 22 bKCVO^IiZ68eJ7M8][8Hm0
+!i122 6
+l39
+L37 17
+V]=c:>bbdDXkQ0]]NI4o660
+!s100 5Mn]]?nUOQZHMNG2zizGa3
+R7
+32
+R39
+!i10b 1
+R17
+R40
+R41
+!i113 0
+R12
+R13
+Eslib_mv_filter
+R1
+R2
+R3
+R4
+!i122 7
+R0
+Z42 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_mv_filter.vhd
+Z43 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_mv_filter.vhd
+l0
+R16
+V7hN><Dm_1U^_[SD:BNGbG3
+!s100 Y68Tlh21jam^^_XODK@540
+R7
+32
+R39
+!i10b 1
+Z44 !s108 1626036729.000000
+Z45 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_mv_filter.vhd|
+Z46 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/slib_mv_filter.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 14 slib_mv_filter 0 22 7hN><Dm_1U^_[SD:BNGbG3
+!i122 7
+l50
+L44 34
+V>T2O6A;1k]CF=FniL=ka21
+!s100 0CZRK`7GXHlk==]S3inY?0
+R7
+32
+R39
+!i10b 1
+R44
+R45
+R46
+!i113 0
+R12
+R13
+Euart_baudgen
+R1
+R2
+R3
+R4
+!i122 8
+R0
+Z47 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_baudgen.vhd
+Z48 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_baudgen.vhd
+l0
+R16
+V?[S`]Nj1Y?0Xm4`ighd<h2
+!s100 nMkhmIiXVBbOz3OzGgdVm0
+R7
+32
+R39
+!i10b 1
+R44
+Z49 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_baudgen.vhd|
+Z50 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_baudgen.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 12 uart_baudgen 0 22 ?[S`]Nj1Y?0Xm4`ighd<h2
+!i122 8
+l43
+L40 26
+V5KOLMI:44??l2mefj3oCg2
+!s100 CNKlD>d;?_?0HJL@`ozP63
+R7
+32
+R39
+!i10b 1
+R44
+R49
+R50
+!i113 0
+R12
+R13
+Euart_interrupt
+R1
+R2
+R3
+R4
+!i122 9
+R0
+Z51 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_interrupt.vhd
+Z52 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_interrupt.vhd
+l0
+L33 1
+VNUU:i>FB1JHA_2MNCnb^^2
+!s100 P4V24=T6mZkdM4zzS<Rl40
+R7
+32
+R39
+!i10b 1
+R44
+Z53 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_interrupt.vhd|
+Z54 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_interrupt.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 14 uart_interrupt 0 22 NUU:i>FB1JHA_2MNCnb^^2
+!i122 9
+l57
+L49 53
+V6V88AHmW80Wjh>75b<`nf3
+!s100 1=VgQ=fn>Yf1QWSVHDb3@1
+R7
+32
+R39
+!i10b 1
+R44
+R53
+R54
+!i113 0
+R12
+R13
+Euart_receiver
+R1
+R2
+R3
+R4
+!i122 10
+R0
+Z55 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_receiver.vhd
+Z56 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_receiver.vhd
+l0
+R16
+ViL8>T8l8c5QH?]COoD=XR0
+!s100 WfDS6;?IjEa1K>Se7AT4E1
+R7
+32
+R39
+!i10b 1
+R44
+Z57 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_receiver.vhd|
+Z58 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_receiver.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 13 uart_receiver 0 22 iL8>T8l8c5QH?]COoD=XR0
+!i122 10
+l119
+L49 262
+Vo1J51zo@L@2JmU9JYKgzS2
+!s100 l3kozC8]YB9Ym]b]55N5=3
+R7
+32
+R39
+!i10b 1
+R44
+R57
+R58
+!i113 0
+R12
+R13
+Euart_transmitter
+R1
+R2
+R3
+R4
+!i122 11
+R0
+Z59 8/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_transmitter.vhd
+Z60 F/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_transmitter.vhd
+l0
+R16
+VS`F=36>TiWClKBYWZS5Y93
+!s100 [bY7QcS9BaHbk36dfUIl11
+R7
+32
+R39
+!i10b 1
+R44
+Z61 !s90 -quiet|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/apb_uart_lib|/home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_transmitter.vhd|
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_transmitter.vhd|
+!i113 0
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 16 uart_transmitter 0 22 S`F=36>TiWClKBYWZS5Y93
+!i122 11
+l59
+L48 168
+Vbf[YZ]Z_B63:ooh=?VmNS1
+!s100 iDLOH401Gh`Z93=AHle:`2
+R7
+32
+R39
+!i10b 1
+R44
+R61
+Z62 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/apb/apb_uart/uart_transmitter.vhd|
+!i113 0
+R12
+R13

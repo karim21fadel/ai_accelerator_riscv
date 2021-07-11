@@ -1,0 +1,2 @@
+/med/pave360/tools/risc-v/setup/install/ri5cy_gnu_toolchain/bin/riscv32-unknown-elf-ar qc libstring.a  CMakeFiles/string.dir/src/qprintf.c.o
+/med/pave360/tools/risc-v/setup/install/ri5cy_gnu_toolchain/bin/riscv32-unknown-elf-ranlib libstring.a

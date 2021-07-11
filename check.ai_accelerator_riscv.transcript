@@ -1,0 +1,326 @@
+# vsim -t ps -voptargs="+acc" -voptargs="-noscelab" Top FabricServer -c -suppress 6627 -suppress 3009 -L work -L can_lib -L pulpino_lib -L axi_node_lib -L apb_node_lib -L axi_mem_if_DP_lib -L axi_spi_slave_lib -L axi_spi_master_lib -L apb_uart_sv_lib -L apb_gpio_lib -L apb_event_unit_lib -L apb_spi_master_lib -L fpu_lib -L apb_pulpino_lib -L apb_fll_if_lib -L core2axi_lib -L apb_timer_lib -L apb_dac_lib -L axi2apb_lib -L apb_i2c_lib -L axi_slice_dc_lib -L riscv_lib -L apb_uart_lib -L axi_slice_lib -L adv_dbg_if_lib -L apb2per_lib -do "run.do" -l check.ai_accelerator_riscv.transcript 
+# Start time: 22:52:37 on Jul 11,2021
+# Loading /tmp/maali@egc-med-heliopolis_dpi_62735/linux_x86_64_gcc-5.3.0/export_tramp.so
+# ** Note: (vsim-3812) Design is being optimized...
+# -- Skipping systemc module FabricServer
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_int_controller(fast)".
+# ** Warning: Top.sv(59): (vopt-2685) [TFMPC] - Too few port connections for 'SOC'.  Expected 58, found 54.
+# ** Warning: Top.sv(59): (vopt-2718) [TFMPC] - Missing connection for port 'pad_mux_o'.
+# ** Warning: Top.sv(59): (vopt-2718) [TFMPC] - Missing connection for port 'pad_cfg_o'.
+# ** Warning: Top.sv(59): (vopt-2718) [TFMPC] - Missing connection for port 'scan_enable_i'.
+# ** Warning: Top.sv(59): (vopt-2718) [TFMPC] - Missing connection for port 'clk_standalone_i'.
+# ** Note: (vopt-143) Recognized 2 FSMs in module "riscv_prefetch_buffer(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_alu_div(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "apb_fll_if(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_master_byte_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__2)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__3)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__4)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__5)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__6)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__7)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__8)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__9)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__10)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "generic_fifo(fast__11)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "sleep_unit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master_rx(fast)".
+# ** Warning: /home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv(571): (vopt-2685) [TFMPC] - Too few port connections for 'adv_dbg_if_i'.  Expected 63, found 61.
+# ** Warning: /home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv(571): (vopt-2718) [TFMPC] - Missing connection for port 'cpu_clk_i'.
+# ** Warning: /home/maali/ai_accelerator_riscv/risc-v/rtl/core_region.sv(571): (vopt-2718) [TFMPC] - Missing connection for port 'tdo_padoe_o'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_mult(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_load_store_unit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi2apb32(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_read_only_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_read_only_ctrl(fast__1)".
+# ** Warning: /home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv(313): (vopt-2685) [TFMPC] - Too few port connections for 'apb_gpio_i'.  Expected 17, found 15.
+# ** Warning: /home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv(313): (vopt-2718) [TFMPC] - Missing connection for port 'power_event'.
+# ** Warning: /home/maali/ai_accelerator_riscv/risc-v/rtl/peripherals.sv(313): (vopt-2718) [TFMPC] - Missing connection for port 'gpio_in_sync'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_BR_allocator(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "i2c_master_bit_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "spi_slave_axi_plug(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_address_decoder_AW(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_slave_controller(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "core2axi(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_write_only_ctrl(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_write_only_ctrl(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_tap_top(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "apb_spi_master(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi_BW_allocator(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in architecture body "apb_uart(rtl)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uart_receiver(rtl)".
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "uart_transmitter(rtl)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "riscv_controller(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_axi_module(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_axi_biu(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "adbg_or1k_module(fast)".
+# ** Note: (vopt-143) Recognized 2 FSMs in module "riscv_debug_unit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "spi_master_controller(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=11.
+# //  Questa Sim-64
+# //  Version 2020.4_2 linux_x86_64 Dec  5 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.Top(fast)
+# Loading can_lib.XlTlmConduitPkg(fast)
+# Loading can_lib.XlTlmResetGenerator(fast)
+# Loading can_lib.XlTlmTargetConduitIf(fast__1)
+# Loading can_lib.XlUartTransactor(fast)
+# Loading pulpino_lib.pulpino_top(fast)
+# Loading pulpino_lib.DEBUG_BUS(fast__1)
+# Loading pulpino_lib.clk_rst_gen(fast)
+# Loading pulpino_lib.cluster_clock_mux2(fast)
+# Loading pulpino_lib.rstgen(fast)
+# Loading pulpino_lib.core_region(fast)
+# Loading pulpino_lib.AXI_BUS(fast__3)
+# Loading riscv_lib.riscv_defines(fast)
+# Loading riscv_lib.apu_core_package(fast)
+# Loading riscv_lib.riscv_core_sv_unit(fast)
+# Loading riscv_lib.riscv_core(fast)
+# Loading pulpino_lib.cluster_clock_gating(fast)
+# Loading riscv_lib.riscv_if_stage_sv_unit(fast)
+# Loading riscv_lib.riscv_if_stage(fast)
+# Loading riscv_lib.riscv_prefetch_buffer(fast)
+# Loading riscv_lib.riscv_fetch_fifo(fast)
+# Loading riscv_lib.riscv_hwloop_controller(fast)
+# Loading riscv_lib.riscv_compressed_decoder_sv_unit(fast)
+# Loading riscv_lib.riscv_compressed_decoder(fast)
+# Loading riscv_lib.riscv_id_stage_sv_unit(fast)
+# Loading riscv_lib.riscv_id_stage(fast)
+# Loading riscv_lib.riscv_register_file(fast)
+# Loading riscv_lib.riscv_decoder_sv_unit(fast)
+# Loading riscv_lib.riscv_decoder(fast)
+# Loading riscv_lib.riscv_controller_sv_unit(fast)
+# Loading riscv_lib.riscv_controller(fast)
+# Loading riscv_lib.riscv_int_controller_sv_unit(fast)
+# Loading riscv_lib.riscv_int_controller(fast)
+# Loading riscv_lib.riscv_hwloop_regs(fast)
+# Loading riscv_lib.riscv_ex_stage_sv_unit(fast)
+# Loading riscv_lib.riscv_ex_stage(fast)
+# Loading riscv_lib.riscv_alu_sv_unit(fast)
+# Loading riscv_lib.riscv_alu(fast)
+# Loading riscv_lib.alu_popcnt(fast)
+# Loading riscv_lib.alu_ff(fast)
+# Loading riscv_lib.riscv_alu_div(fast)
+# Loading riscv_lib.riscv_mult_sv_unit(fast)
+# Loading riscv_lib.riscv_mult(fast)
+# Loading riscv_lib.riscv_load_store_unit(fast)
+# Loading riscv_lib.riscv_cs_registers_sv_unit(fast)
+# Loading riscv_lib.riscv_cs_registers(fast)
+# Loading riscv_lib.riscv_debug_unit_sv_unit(fast)
+# Loading riscv_lib.riscv_debug_unit(fast)
+# Loading riscv_lib.riscv_tracer_defines(fast)
+# Loading riscv_lib.riscv_tracer_sv_unit(fast)
+# Loading riscv_lib.riscv_tracer(fast)
+# Loading pulpino_lib.core2axi_wrap(fast)
+# Loading core2axi_lib.core2axi(fast)
+# Loading pulpino_lib.axi_slice_wrap(fast)
+# Loading axi_slice_lib.axi_slice(fast)
+# Loading axi_slice_lib.axi_aw_buffer(fast)
+# Loading pulpino_lib.generic_fifo(fast)
+# Loading axi_slice_lib.axi_ar_buffer(fast)
+# Loading axi_slice_lib.axi_w_buffer(fast)
+# Loading pulpino_lib.generic_fifo(fast__1)
+# Loading axi_slice_lib.axi_r_buffer(fast)
+# Loading axi_slice_lib.axi_b_buffer(fast)
+# Loading pulpino_lib.generic_fifo(fast__2)
+# Loading pulpino_lib.instr_ram_wrap(fast)
+# Loading pulpino_lib.sp_ram_wrap(fast)
+# Loading pulpino_lib.sp_ram(fast)
+# Loading pulpino_lib.boot_rom_wrap(fast)
+# Loading pulpino_lib.boot_code(fast)
+# Loading pulpino_lib.axi_mem_if_SP_wrap(fast)
+# Loading axi_mem_if_DP_lib.axi_mem_if_SP(fast)
+# Loading axi_slice_lib.axi_aw_buffer(fast__1)
+# Loading pulpino_lib.generic_fifo(fast__3)
+# Loading axi_slice_lib.axi_ar_buffer(fast__1)
+# Loading axi_slice_lib.axi_w_buffer(fast__1)
+# Loading pulpino_lib.generic_fifo(fast__4)
+# Loading axi_slice_lib.axi_r_buffer(fast__1)
+# Loading pulpino_lib.generic_fifo(fast__5)
+# Loading axi_slice_lib.axi_b_buffer(fast__1)
+# Loading pulpino_lib.generic_fifo(fast__6)
+# Loading axi_mem_if_DP_lib.axi_write_only_ctrl(fast)
+# Loading axi_mem_if_DP_lib.axi_read_only_ctrl(fast)
+# Loading pulpino_lib.ram_mux(fast)
+# Loading pulpino_lib.axi_mem_if_SP_wrap(fast__1)
+# Loading axi_mem_if_DP_lib.axi_mem_if_SP(fast__1)
+# Loading axi_mem_if_DP_lib.axi_write_only_ctrl(fast__1)
+# Loading axi_mem_if_DP_lib.axi_read_only_ctrl(fast__1)
+# Loading pulpino_lib.ram_mux(fast__1)
+# Loading adv_dbg_if_lib.adv_dbg_if(fast)
+# Loading adv_dbg_if_lib.adbg_tap_top(fast)
+# Loading pulpino_lib.cluster_clock_inverter(fast)
+# Loading pulpino_lib.cluster_clock_mux2(fast__1)
+# Loading adv_dbg_if_lib.adbg_top(fast)
+# Loading adv_dbg_if_lib.adbg_axi_module(fast)
+# Loading adv_dbg_if_lib.adbg_axi_biu(fast)
+# Loading adv_dbg_if_lib.adbg_crc32(fast)
+# Loading adv_dbg_if_lib.adbg_or1k_module(fast)
+# Loading adv_dbg_if_lib.adbg_or1k_status_reg(fast)
+# Loading adv_dbg_if_lib.adbg_or1k_biu(fast)
+# Loading pulpino_lib.peripherals(fast)
+# Loading pulpino_lib.APB_BUS(fast__1)
+# Loading pulpino_lib.APB_BUS(fast__2)
+# Loading pulpino_lib.axi_spi_slave_wrap(fast)
+# Loading axi_spi_slave_lib.axi_spi_slave(fast)
+# Loading axi_spi_slave_lib.spi_slave_rx(fast)
+# Loading axi_spi_slave_lib.spi_slave_tx(fast)
+# Loading pulpino_lib.pulp_clock_inverter(fast)
+# Loading pulpino_lib.pulp_clock_mux2(fast)
+# Loading axi_spi_slave_lib.spi_slave_controller(fast)
+# Loading axi_spi_slave_lib.spi_slave_cmd_parser(fast)
+# Loading axi_spi_slave_lib.spi_slave_regs(fast)
+# Loading axi_spi_slave_lib.spi_slave_dc_fifo(fast)
+# Loading axi_slice_dc_lib.dc_token_ring_fifo_din(fast)
+# Loading axi_slice_dc_lib.dc_data_buffer(fast)
+# Loading axi_slice_dc_lib.dc_token_ring(fast)
+# Loading axi_slice_dc_lib.dc_full_detector(fast)
+# Loading axi_slice_dc_lib.dc_synchronizer(fast)
+# Loading axi_slice_dc_lib.dc_token_ring_fifo_dout(fast)
+# Loading axi_slice_dc_lib.dc_token_ring(fast__1)
+# Loading axi_slice_dc_lib.dc_synchronizer(fast__1)
+# Loading axi_spi_slave_lib.spi_slave_axi_plug(fast)
+# Loading axi_spi_slave_lib.spi_slave_syncro(fast)
+# Loading pulpino_lib.axi2apb_wrap(fast)
+# Loading axi2apb_lib.axi2apb32(fast)
+# Loading axi_slice_lib.axi_aw_buffer(fast__2)
+# Loading pulpino_lib.generic_fifo(fast__7)
+# Loading axi_slice_lib.axi_ar_buffer(fast__2)
+# Loading axi_slice_lib.axi_r_buffer(fast__2)
+# Loading pulpino_lib.generic_fifo(fast__8)
+# Loading axi_slice_lib.axi_b_buffer(fast__2)
+# Loading pulpino_lib.generic_fifo(fast__9)
+# Loading pulpino_lib.periph_bus_wrap(fast)
+# Loading pulpino_lib.APB_BUS(fast__4)
+# Loading apb_node_lib.apb_node_wrap(fast)
+# Loading apb_node_lib.apb_node(fast)
+# Loading apb_gpio_lib.apb_gpio(fast)
+# Loading apb_spi_master_lib.apb_spi_master(fast)
+# Loading apb_spi_master_lib.spi_master_apb_if(fast)
+# Loading apb_spi_master_lib.spi_master_fifo(fast)
+# Loading apb_spi_master_lib.spi_master_controller(fast)
+# Loading apb_spi_master_lib.spi_master_clkgen(fast)
+# Loading apb_spi_master_lib.spi_master_tx(fast)
+# Loading apb_spi_master_lib.spi_master_rx(fast)
+# Loading apb_timer_lib.apb_timer(fast)
+# Loading apb_timer_lib.timer(fast)
+# Loading apb_event_unit_lib.apb_event_unit(fast)
+# Loading apb_event_unit_lib.generic_service_unit(fast)
+# Loading apb_event_unit_lib.sleep_unit(fast)
+# Loading apb_i2c_lib.apb_i2c(fast)
+# Loading apb_i2c_lib.i2c_master_byte_ctrl(fast)
+# Loading apb_i2c_lib.i2c_master_bit_ctrl(fast)
+# Loading apb_fll_if_lib.apb_fll_if(fast)
+# Loading apb_pulpino_lib.apb_pulpino(fast)
+# Loading apb2per_lib.apb2per(fast)
+# Loading pulpino_lib.mcan2_apb_pvci_wrapper(fast)
+# Loading pulpino_lib.mcan2_io(fast)
+# Loading pulpino_lib.mcan2(fast)
+# Loading pulpino_lib.m3s001fg(fast)
+# Loading pulpino_lib.m3s006fg(fast)
+# Loading pulpino_lib.m3s002fg(fast)
+# Loading pulpino_lib.m3s003fg(fast)
+# Loading pulpino_lib.m3s004fg(fast)
+# Loading pulpino_lib.m3s005fg(fast)
+# Loading pulpino_lib.m3s007fg(fast)
+# Loading pulpino_lib.m3s008fg(fast)
+# Loading pulpino_lib.m3s009fg(fast)
+# Loading pulpino_lib.m3s010fg(fast)
+# Loading pulpino_lib.m3s011fg(fast)
+# Loading pulpino_lib.m3s012fg(fast)
+# Loading pulpino_lib.m3s013fg(fast)
+# Loading pulpino_lib.m3s014fg(fast)
+# Loading pulpino_lib.m3s015fg(fast)
+# Loading pulpino_lib.apb2pvci(fast)
+# Loading apb_dac_lib.apb_dac(fast)
+# Loading apb_dac_lib.dac(fast)
+# Loading pulpino_lib.axi_node_intf_wrap(fast)
+# Loading axi_node_lib.axi_node(fast)
+# Loading axi_node_lib.axi_request_block(fast)
+# Loading axi_node_lib.axi_AR_allocator(fast)
+# Loading axi_node_lib.axi_ArbitrationTree(fast)
+# Loading axi_node_lib.axi_FanInPrimitive_Req(fast)
+# Loading axi_node_lib.axi_RR_Flag_Req(fast)
+# Loading axi_node_lib.axi_AW_allocator(fast)
+# Loading axi_node_lib.axi_DW_allocator(fast)
+# Loading pulpino_lib.generic_fifo(fast__10)
+# Loading axi_node_lib.axi_multiplexer(fast)
+# Loading axi_node_lib.axi_address_decoder_BW(fast)
+# Loading axi_node_lib.axi_address_decoder_BR(fast)
+# Loading axi_node_lib.axi_response_block(fast)
+# Loading axi_node_lib.axi_BW_allocator(fast)
+# Loading axi_node_lib.axi_ArbitrationTree(fast__1)
+# Loading axi_node_lib.axi_FanInPrimitive_Req(fast__1)
+# Loading axi_node_lib.axi_BR_allocator(fast)
+# Loading axi_node_lib.axi_ArbitrationTree(fast__2)
+# Loading axi_node_lib.axi_FanInPrimitive_Req(fast__2)
+# Loading axi_node_lib.axi_address_decoder_AR(fast)
+# Loading axi_node_lib.axi_address_decoder_AW(fast)
+# Loading axi_node_lib.axi_address_decoder_DW(fast)
+# Loading pulpino_lib.generic_fifo(fast__11)
+# Loading /home/maali/ai_accelerator_riscv/work/_sc/linux_x86_64_gcc-5.3.0/systemc.so
+# Loading /home/maali/ai_accelerator_riscv/work.FabricServer
+# 
+# 
+# +=+ INFO: ::FabricServer(): ModelSim Version: ModelSim for Questa-64 Version 2020.4_2 2020.12
+# 
+# Loading pulpino_lib.AXI_BUS(fast__1)
+# Loading pulpino_lib.AXI_BUS(fast__2)
+# Loading pulpino_lib.APB_BUS(fast__3)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading apb_uart_lib.apb_uart(rtl)#1
+# Loading apb_uart_lib.slib_input_sync(rtl)#1
+# Loading apb_uart_lib.slib_input_filter(rtl)#1
+# Loading apb_uart_lib.uart_interrupt(rtl)#1
+# Loading apb_uart_lib.slib_edge_detect(rtl)#1
+# Loading apb_uart_lib.uart_baudgen(rtl)#1
+# Loading apb_uart_lib.slib_clock_div(rtl)#1
+# Loading apb_uart_lib.slib_fifo(rtl)#1
+# Loading apb_uart_lib.slib_fifo(rtl)#2
+# Loading apb_uart_lib.uart_transmitter(rtl)#1
+# Loading apb_uart_lib.uart_receiver(rtl)#1
+# Loading apb_uart_lib.slib_counter(rtl)#1
+# Loading apb_uart_lib.slib_mv_filter(rtl)#1
+# Loading apb_uart_lib.slib_input_filter(rtl)#2
+# Compiling /tmp/maali@egc-med-heliopolis_dpi_62735/linux_x86_64_gcc-5.3.0/exportwrapper.c
+# Loading /tmp/maali@egc-med-heliopolis_dpi_62735/linux_x86_64_gcc-5.3.0/vsim_auto_compile.so
+# ** Warning: (vsim-4025) The port '/FabricServer/resetGenerator/syscResetTargetSocket_port_0' is of an undebuggable type.
+# ** Warning: (vsim-4025) The export '/FabricServer/resetGenerator/syscResetInitiatorSocket_export_0' is of an undebuggable type.
+# do run.do
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /Top/SOC/peripherals_i/apb_uart_i/UART_RXFF
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /Top/SOC/peripherals_i/apb_uart_i/UART_TXFF
+# Server: @0 ns +=+ INFO: Awaiting reset ...
+# UART-INFO uartXtermClientInit() Opening xterm for interactive character I/O which is accessible via pseudo-terminal,
+# '/dev/pts/190' ...
+# UART-INFO uartXtermClientInit() This client is operating in RAW mode (see man termios).
+# UART-INFO uartXtermClientConfig() UART transactor INITIAL configuration: baudRate=115200 pollingInterval=117 clockRate=10000000 clocksPerBit=87 rts=0
+# UART-INFO uartXtermClientConfig() Entering xterm polling loop pollingIntervalInClocks=3380 clocksPerBit=13 ...
+# UART-INFO uartXtermClientConfig() UART transactor FINAL configuration: baudRate=781250 pollingInterval=3380 clockRate=10000000 clocksPerBit=13 rts=0
+# Server: @840 ns +=+ INFO: ... got it!
+# [TRACER] Output filename is: trace_core_00_0.log
+# UART-INFO uartXtermTransportBw() ... completed processing of xterm connection totalNumTxChars=0.
+# UART-INFO uartXtermTransportBw() Closing TX pseudo-terminal file ...
+# UART-INFO uartXtermTransportBw() Closing RX pseudo-terminal file ...
+# ** Note: $finish    : /home/hishamab/VLAB_HOME/common/pave360-open_kit_v21.0.1a/xl_vip-questa2020.4/lib/XlUartTransactor.sv(296)
+#    Time: 4732200 ns  Iteration: 1  Instance: /Top/uartTransactor
+# End time: 22:52:52 on Jul 11,2021, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 15

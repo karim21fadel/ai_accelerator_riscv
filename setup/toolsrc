@@ -1,0 +1,641 @@
+# If you search for all comments with the words "SITE SPECIFIC" you'll see
+# they refer to a block of site specific settings for each tool environment.
+# These blocks should be the only things needing modification for
+# any specific site. All other settings are dependent on the SITE SPECIFIC
+# settings and should need no modifications.
+#
+# Here we set default values for certain key variables.
+if ( ! $?LM_LICENSE_FILE ) setenv LM_LICENSE_FILE ""
+if ( ! $?M4PATH ) setenv M4PATH ""
+
+# Note: several host platform settings below depend
+# on this setting which is the standard way of telling
+# Questa to run either 32 bit or 64 bit binaries.
+if ( ! $?MTI_VCO_MODE ) setenv MTI_VCO_MODE 64
+
+# Set the default value for LD_LIBRARY_PATH. Setting an empty variable can cause
+# problems sporadically.
+if ( "$MTI_VCO_MODE" == "32" ) then
+    if ( ! $?LD_LIBRARY_PATH ) setenv LD_LIBRARY_PATH "/lib"
+else if ( "$MTI_VCO_MODE" == "64" ) then
+    if ( ! $?LD_LIBRARY_PATH ) setenv LD_LIBRARY_PATH "/lib64"
+endif
+
+# Add Siemens license file path or license server in form of port@host
+# SITE SPECIFIC -- begin {
+setenv LM_LICENSE_FILE 1717@lichost:1717@egc-med-matrouh
+# SITE SPECIFIC -- } end
+
+if ($?env_mti ) then
+    setenv env_questa
+endif
+
+if ($?env_gcc_questa ) then
+    setenv env_gcc
+endif
+
+#
+# Questa
+#
+
+if ($?env_questa) then
+
+    # SITE SPECIFIC -- begin {
+    if ( ! $?MTI_VERSION ) setenv MTI_VERSION 2020.4
+    setenv QUESTAVER $MTI_VERSION
+
+    setenv MGC_HOME /tools/med_tools/software/Questa/$QUESTAVER/questasim
+
+    #
+    # SITE SPECIFIC -- } end
+    
+    setenv MTI_HOME $MGC_HOME
+    setenv QUESTA_HOME $MGC_HOME
+    setenv MTI_BYPASS_SC_PLATFORM_CHECK 1
+    set path = ($MTI_HOME/bin $path)
+    setenv QUESTA_VERSION $MTI_VERSION
+endif
+
+#
+# GCC Compiler
+#
+
+if ($?env_gcc) then
+
+    # 32 bit vs. 64 bit gcc compiler is chosen based on setting of
+    # Questa MTI_VCO_MODE variable.
+    #
+    # Makefiles choose which platform directory to pick up binaries
+    # out of. Setting of $MTI_VCO_MODE is necessary for this to be
+    # decided properly.
+
+    # SITE SPECIFIC -- begin {
+    
+    # By default, the GCC provided by Questa is used. If Questa is not 
+    # installed, you can manually change the path of GNUHOME to point to the 
+    # used GCC. UVMC_BUILD_PLATFORM should be set accordingly.
+    if ( ! $?GCCVER ) setenv GCCVER 530
+
+    if ( "$MTI_VCO_MODE" == "32" ) then
+        if( "$GCCVER" == "530" ) then
+            setenv GNUHOME $MGC_HOME/gcc-5.3.0-linux
+            setenv UVMC_BUILD_PLATFORM linux_el30_gnu53
+        else if( "$GCCVER" == "740" ) then
+            setenv GNUHOME $MGC_HOME/gcc-7.4.0-linux
+            setenv UVMC_BUILD_PLATFORM linux_el30_gnu74
+        else if( "$GCCVER" == "474" ) then
+            setenv GNUHOME $MGC_HOME/gcc-4.7.4-linux
+            setenv UVMC_BUILD_PLATFORM linux_el30_gnu47
+        else
+            echo "Error: Unsupported GCC version specified"
+        endif
+        setenv GNULIB lib
+
+    else if ( "$MTI_VCO_MODE" == "64" ) then
+        if( "$GCCVER" == "530" ) then
+            setenv GNUHOME $MGC_HOME/gcc-5.3.0-linux_x86_64
+            setenv UVMC_BUILD_PLATFORM linux64_el30_gnu53
+        else if( "$GCCVER" == "740" ) then
+            setenv GNUHOME $MGC_HOME/gcc-7.4.0-linux_x86_64
+            setenv UVMC_BUILD_PLATFORM linux64_el30_gnu74
+        else if( "$GCCVER" == "474" ) then
+            setenv GNUHOME $MGC_HOME/gcc-4.7.4-linux_x86_64
+            setenv UVMC_BUILD_PLATFORM linux64_el30_gnu47
+        else
+            echo "Error: Unsupported GCC version specified"
+        endif
+        setenv GNULIB lib64
+        setenv XL_BUILD_PLATFORM $UVMC_BUILD_PLATFORM
+    endif
+    # SITE SPECIFIC -- } end
+
+    setenv CPLUS_INCLUDE_PATH $GNUHOME/include/c++
+
+    set path = ( $GNUHOME/bin $path )
+    setenv LD_LIBRARY_PATH $GNUHOME/$GNULIB\:${LD_LIBRARY_PATH}
+endif
+
+#
+# PAVE360 - Pre-silicon Autonomous Verification Environment app
+#
+
+if ($?env_pave) then
+    # SITE SPECIFIC -- begin {
+    #Path to installed PAVE360 release
+    setenv PAVE360APP_VER v21.1
+    setenv PAVE360APP_HOME /home/hishamab/VLAB_HOME
+    
+    if ( ! $?MTI_VERSION ) setenv MTI_VERSION 2020.4
+    
+    #Path to FMI library 
+    setenv XL_VIP_PAVE_VER 21.0.1a
+    setenv FMI_LIB_HOME $PAVE360APP_HOME/common/pave360-open_kit_v${XL_VIP_PAVE_VER}/xl_vip-questa${MTI_VERSION}/shared/fmi/lib
+    # SITE SPECIFIC -- } end
+    
+    # PAVE360 licensing
+    setenv MGLS_HOME $PAVE360APP_HOME/common/license/mgls_v9-23_5-4-0.aol
+    setenv MGLS_PKGINFO_FILE $MGLS_HOME/lib/mgc.pkginfo
+
+    # FMI Library
+    setenv FMI_LIB_VERSION FMILibrary-2.0.3
+    setenv LD_LIBRARY_PATH $FMI_LIB_HOME/$FMI_LIB_VERSION/lib:${LD_LIBRARY_PATH}
+    set path = ($FMI_LIB_HOME/$FMI_LIB_VERSION/bin $path)
+
+    
+    #IoT Reference LAB
+    if ($?env_cloudconnect) then
+        setenv IOT_REFLAB_HOME ${PAVE360APP_HOME}/reference_labs/iot_ref_lab
+        setenv LD_LIBRARY_PATH ${IOT_REFLAB_HOME}/lib/OTACloudConnectUnit/${XL_BUILD_PLATFORM}/questa/${MTI_VERSION}:${IOT_REFLAB_HOME}/lib/OTACloudConnectUnit/${XL_BUILD_PLATFORM}/osci:${LD_LIBRARY_PATH}
+        setenv LD_LIBRARY_PATH ${IOT_REFLAB_HOME}/lib/OTASdk/${XL_BUILD_PLATFORM}:${LD_LIBRARY_PATH}
+    endif
+
+    #Virtual CAN Gateway
+    if ($?env_virtualcangateway) then
+        setenv VCANGATEWAY_VER 1.4.3
+        setenv VCANGATEWAY_RELS ${PAVE360APP_HOME}/devices/VirtualCanGateway
+        setenv LD_LIBRARY_PATH ${VCANGATEWAY_RELS}/lib/${XL_BUILD_PLATFORM}/questa/${MTI_VERSION}:${VCANGATEWAY_RELS}/lib/${XL_BUILD_PLATFORM}/osci:${LD_LIBRARY_PATH}
+    endif
+endif
+
+#
+# ARM Cross Compiler Toolchain
+#
+
+if ($?env_cross_tools) then
+    # SITE SPECIFIC -- begin {
+    setenv CROSS_TOOLS_HOME /med/pave360/tools/aarch64--glibc--stable-2018.02-2
+    # SITE SPECIFIC -- } end
+
+    # Add cross compiler
+    setenv PLAID_CROSS_TOOLCHAIN $CROSS_TOOLS_HOME
+    set path = ($CROSS_TOOLS_HOME/bin $path)
+    setenv CROSS_TARGET aarch64-linux
+    setenv CROSS_COMPILE $CROSS_TARGET-
+    env | grep CROSS_
+endif
+
+#
+# Veloce OS3
+#
+
+if ($?env_veloce_os3) then # {
+    # SITE SPECIFIC -- begin {
+    setenv VELOCE_HOME /tools/med_tools/software/Veloce_v20.0.3
+
+    setenv TBX_HOME $VELOCE_HOME/tbx
+    setenv VMW_HOME $VELOCE_HOME
+
+    setenv MED_EMULATOR /tools/med_tools/software/EMULATORS
+    setenv MED_COMMON_LLSW_FILES $VELOCE_HOME/TnD
+
+    setenv Emulator sphinx
+    setenv MED_EMULATOR_NAME ${Emulator}
+    # SITE SPECIFIC -- } end
+    #
+
+    setenv MED_FAULT_DIRECTORY $MED_EMULATOR/$Emulator/ConfigFiles/FLAT
+    setenv TBX_BUILD_PLATFORM $XL_BUILD_PLATFORM
+
+    # These macros are used to allow removal of velhvl from the flow completely
+    # when linking for puresims. Rather, just native Questa vlog and sccom
+    # commands can be used as is demonstrated in many of the test examples.
+    # These macros define the necessary TBX infrastructure components required
+    # to run in puresim mode, including SCEMI pipes libraries, SCEMI DMI FlexMem
+    # libraries, and others.
+
+    # TBX SC insfrastructure (to be passed to sccom)
+    setenv TBX_SC_INFRASTRUCT "-I$TBX_HOME/include -DTBX_puresim $TBX_HOME/questa/include/TbxSvManager.cxx $TBX_HOME/questa/include/xtlm_packer.cxx $TBX_HOME/include/scemi_pipe_sc_threads.cxx"
+
+    # TBX SV insfrastructure (to be passed to vlog)
+    setenv TBX_SV_INFRASTRUCT "+incdir+$TBX_HOME/questa/hdl +incdir+$TBX_HOME/scemi_pipe_sim/hdl +define+SCEMI_PIPE_SIM $TBX_HOME/questa/hdl/TbxSvManager.sv $TBX_HOME/questa/hdl/xtlm_fifo_if.sv $TBX_HOME/questa/hdl/xtlm_port_if.sv $TBX_HOME/questa/hdl/dump_definitions.sv $TBX_HOME/scemi_pipe_sim/hdl/scemi_pipe_ifs.sv"
+
+    setenv SCEMI_PURESIM_LIBS "$TBX_HOME/lib/$TBX_BUILD_PLATFORM/libtbx-flexmem_scemi_dmi_sim.a $TBX_HOME/questa/lib/$TBX_BUILD_PLATFORM/libxtlmquesta.a"
+
+    set path = ( $VELOCE_HOME/bin $path)
+
+    if ( "$MTI_VCO_MODE" == "32" ) then
+        setenv TBXSVLINK_BUILD_PLATFORM
+    else if ( "$MTI_VCO_MODE" == "64" ) then
+        setenv TBXSVLINK_BUILD_PLATFORM -64bit_runtime
+    endif
+
+    env|grep VELOCE_
+    env|grep MED
+endif # }
+
+#
+# SystemC, SCV
+#
+if ($?env_sysc) then
+
+    # SITE SPECIFIC -- begin {
+    setenv SYSTEMC /tools/med_tools/software/Veloce_v21.0.1/bin/med_tools/linux/systemc
+    # SITE SPECIFIC -- } end
+
+    setenv SYSC_LIB lib/$XL_BUILD_PLATFORM
+
+    setenv SYSTEMC_TLM_HOME $SYSTEMC/include
+    setenv SYSTEMC_BOOST_HOME $SYSTEMC/include/sysc/packages
+
+    setenv LD_LIBRARY_PATH ${SYSTEMC}/${SYSC_LIB}:$LD_LIBRARY_PATH
+endif
+
+#
+# MED-ARM components
+#
+
+if ($?env_medarmesa) then
+    env | grep env_medarmesa
+    # SITE SPECIFIC -- begin {
+    setenv MEDARMESA_HOME /net/egc-med-souhag/export/home/users/hishamab/medarmesa/Installs
+    # SITE SPECIFIC -- } end
+    #
+    setenv CCI_QUESTA_LIB $MEDARMESA_HOME/CCI-550/r1p0/cci550_si5dvm2mem3sys3/questa/2020.1/questa_64_lib
+    #setenv GPU_QUESTA_LIB $MEDARMESA_HOME/MIMIR/r0p0/4core_1L2/questa/10.5b/questa_64_lib
+    #setenv CCI_VELOCE_LIB $MEDARMESA_HOME/CCI-550/r1p0/cci550_si2dvm0mem1sys1/veloce/v3_16_1_6/CCI550_lib
+    setenv CCI_VELOCE_LIB $MEDARMESA_HOME/CCI-550/r1p0/cci550_si5dvm2mem3sys3/veloce/v20_0_3/CCI550_lib
+    #setenv GPU_VELOCE_LIB $MEDARMESA_HOME/MIMIR/r0p0/4core_1L2/veloce/v3_16_1_6/MIMIR_lib
+    #setenv GPU_VELOCE_LIB $MEDARMESA_HOME/MIMIR/r0p0/4core_1L2/veloce/v3_16_1_8/MIMIR_lib
+    env | grep CCI_QUESTA_LIB
+    #env | grep GPU_QUESTA_LIB
+endif
+
+#
+# VISTA
+#
+
+if ($?env_vista) then
+    # SITE SPECIFIC -- begin {
+    setenv VISTA_HOME /med/pave360/tools/Vista/Vista2020.4/install
+    # SITE SPECIFIC -- } end
+
+    setenv VISTA_ROOT $VISTA_HOME
+    setenv MODEL_BUILDER_HOME $VISTA_HOME/papoulis
+    if ( "$MTI_VCO_MODE" == "32" ) then
+        setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}\:${VISTA_HOME}/linux32/tools/lib
+    else if ( "$MTI_VCO_MODE" == "64" ) then
+        setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}\:${VISTA_HOME}/linux64/tools/lib
+    endif
+
+    if( "$GCCVER" == "474" ) then
+        setenv VISTA_GCC gcc47
+        setenv VISTA_GCC_VERSION 474
+    else if( "$GCCVER" == "450" ) then
+        setenv VISTA_GCC gcc45
+        setenv VISTA_GCC_VERSION 450
+    else if( "$GCCVER" == "433" ) then
+        setenv VISTA_GCC gcc43
+        setenv VISTA_GCC_VERSION 434
+    else if( "$GCCVER" == "530" ) then
+        setenv VISTA_GCC gcc53
+        setenv VISTA_GCC_VERSION 530
+    endif
+
+    set path = ( $path $VISTA_HOME/bin )
+endif
+
+#
+# XL-VIP Library
+#
+
+if ($?env_xl_vip) then
+
+    setenv XL_VIP_VER 21.0.1a
+    if ( ! $?MTI_VERSION ) setenv MTI_VERSION 2020.4
+    
+    setenv XL_VIP_HOME  $PAVE360APP_HOME/common/pave360-open_kit_v${XL_VIP_VER}/xl_vip-questa${MTI_VERSION}
+
+    if ( ! $?XL_SIM_MODE ) setenv XL_SIM_MODE puresim
+    set path = ( $XL_VIP_HOME/bin $path )
+endif
+
+#
+# Visualizer
+#
+
+if ($?env_visualizer) then
+
+    # SITE SPECIFIC -- begin {
+    setenv VISUALIZER_HOME /medsj/edatools/mti/questa10.6b/visualizer
+    # SITE SPECIFIC -- } end
+
+    set path = ( $VISUALIZER_HOME/bin $path )
+endif
+
+#
+# UVM
+#
+
+if ($?env_uvm) then
+    # SITE SPECIFIC -- begin {
+    # UVM base library
+    setenv UVM_HOME $MTI_HOME/verilog_src/uvm-1.1d
+    setenv QUESTA_UVM_PKG $MTI_HOME/verilog_src/questa_uvm_pkg-1.2/src
+    # SITE SPECIFIC -- } end
+endif
+
+#
+# UVM-Connect
+#
+
+if ($?env_uvmc) then
+    # SITE SPECIFIC -- begin {
+    if ( $?XL_VIP_HOME ) then
+        setenv UVMC_HOME $XL_VIP_HOME/shared/xl_uvmc/uvmc-2.3
+    endif
+    # SITE SPECIFIC -- } end
+endif
+
+if ($?env_xl_uvmc) then
+    # SITE SPECIFIC -- begin {
+    if ( $?XL_VIP_HOME ) then
+        setenv UVMC_HOME $XL_VIP_HOME/shared/xl_uvmc/xl-uvmc-2.3
+    endif
+    # SITE SPECIFIC -- } end
+endif
+
+#
+# Codelink
+#
+
+if ($?env_codelink) then
+    setenv CODELINK_ENABLE 1
+    # SITE SPECIFIC -- begin {
+    setenv CODELINK_HOME /med/pave360/tools/Codelink/Veloce_Codelink_2020.1/codelink_home.aol
+    # SITE SPECIFIC -- } end
+    setenv LD_LIBRARY_PATH $CODELINK_HOME/veloce/lib/vsim:$CODELINK_HOME/veloce/lib:$LD_LIBRARY_PATH
+
+    setenv CODELINK_QUESTASIM $MTI_HOME
+
+    if( "$GCCVER" == "530" ) then
+        setenv CODELINK_GCCVER 5.3_64
+    else if( "$GCCVER" == "474" ) then
+        setenv CODELINK_GCCVER 4.7_64
+    endif
+endif
+
+#
+# VirtuaLAB
+#
+
+if ($?env_virtualab) then # {
+    env | grep env_virtualab
+    # SITE SPECIFIC -- begin {
+    setenv VLAB_VER  v21.1_RC1
+    setenv VLAB_HOME /tools/med_tools/software/VirtuaLAB/VirtuaLAB_$VLAB_VER
+    # SITE SPECIFIC -- } end
+
+    #Platform_Specifics
+    set platformName=`/usr/bin/lsb_release -a`
+    switch ( "$platformName" )
+    case "*Red\ Hat*":
+        echo "Linux Red Hat"
+        switch ( "$platformName" )
+            case "*release\ 6*":
+                echo "Release 6"
+                setenv PLAT "rhe6"
+            breaksw
+            case "*release\ 7*":
+                echo "Release 7"
+                setenv PLAT "rhe7"
+            breaksw
+            default:
+                echo "Error: This platform is not supported. The supported platforms for are: RHEL 7.3/6.7 - CentOS 7.3/6.7 - SUSE 12.2/11.4 - Ubuntu 14.04."
+            breaksw
+        endsw
+        breaksw
+    case "*CentOS*":
+        echo "Linux Cent OS"
+            switch ( "$platformName" )
+            case "*release\ 6*":
+                echo "Release 6"
+                setenv PLAT "rhe6"
+            breaksw
+            case "*release\ 7*":
+                echo "Release 7"
+                setenv PLAT "rhe7"
+            breaksw
+            default:
+                echo "Error: This platform is not supported. The supported platforms for are: RHEL 7.3/6.7 - CentOS 7.3/6.7 - SUSE 12.2/11.4 - Ubuntu 14.04."
+            breaksw
+        endsw
+        breaksw
+    case "*SUSE*":
+        echo "Linux SUSE"
+        switch ( "$platformName" )
+            case "*Server\ 11*":
+                echo "Release 11"
+                setenv PLAT "suse11"
+            breaksw
+            case "*Server\ 12*":
+                echo "Release 12"
+                setenv PLAT "suse12"
+            breaksw
+            default:
+                echo "Error: This platform is not supported. The supported platforms for are: RHEL 7.3/6.7 - CentOS 7.3/6.7 - SUSE 12.2/11.4 - Ubuntu 14.04."
+            breaksw
+        endsw
+        breaksw
+    case "*Ubuntu*":
+        echo "Linux Ubuntu"
+        switch ( "$platformName" )
+            case "*Ubuntu\ 14*":
+                echo "Release 14"
+                setenv PLAT "ubuntu14"
+            breaksw
+            default:
+                echo "Error: This platform is not supported. The supported platforms for are: RHEL 7.3/6.7 - CentOS 7.3/6.7 - SUSE 12.2/11.4 - Ubuntu 14.04."
+            breaksw
+        endsw
+        breaksw
+    default:
+        echo "Error: This platform is not supported. The supported platforms for are: RHEL 7.3/6.7 - CentOS 7.3/6.7 - SUSE 12.2/11.4 - Ubuntu 14.04."
+    breaksw
+    endsw
+
+    #HDL_IP
+    setenv HDL_IP_HOME ${PAVE360APP_HOME}/common/hdl
+
+	# Add in the VLAB devices you need here ...
+    grep VLAB_UTIL $VLAB_HOME/env_veloce.csh > env-vlab-mods.csh
+    grep PROTOCOL_ANALYZER $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep AXI_SLAVE $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep AHB_SLAVE $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    # Ethernet device and VirtuaLAB external libs. Needed for Ethernet demos
+    grep VETH_VER $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep VVED_HOME $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep ACE_HOME $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep WX_HOME $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep libFFmpeg $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep libSndFile $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep libTiff $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    grep "external/suse11" $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+    if ("$PLAT" == "ubuntu14") then
+        grep "external/ubuntu14" $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+	endif
+	if ("$PLAT" == "rhe7") then
+        grep "external/rhe7" $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+	endif
+	if ("$PLAT" == "suse12") then
+        grep "external/suse12" $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+	endif
+    
+    #Licensing
+    grep MGLS_HOME $VLAB_HOME/env_veloce.csh >> env-vlab-mods.csh
+
+    source env-vlab-mods.csh
+    rm env-vlab-mods.csh
+
+    #Check Paths
+        if ( -d "$VLAB_HOME" ) then
+            echo "VLAB_HOME    =>    $VLAB_HOME    :Ok"
+        else
+            echo "VLAB_HOME    =>    $VLAB_HOME    :Directory does not exist"
+        endif
+
+        if ( -d "$MTI_HOME" ) then
+            echo "MTI_HOME     =>    $MTI_HOME    :Ok"
+        else
+            set eval_path=`eval echo $MTI_HOME`
+            if  ( -d "$eval_path" ) then
+                setenv MTI_HOME $eval_path
+                echo "MTI_HOME     =>    $MTI_HOME    :Ok"
+            else
+                echo "MTI_HOME     =>    $MTI_HOME    :Directory does not exist"
+            endif
+        endif
+
+    endif
+endif # }
+
+#
+# Matlab
+#
+
+if ($?env_matlab) then
+    # SITE SPECIFIC -- begin {
+    setenv MATLAB /med/pave360/tools/MATLAB/R2017b
+
+    # SITE SPECIFIC -- } end
+
+    setenv MATLABLIB glnxa64
+
+    set path = ( $MATLAB/bin $path )
+    setenv LD_LIBRARY_PATH ${MATLAB}/bin/${MATLABLIB}:${LD_LIBRARY_PATH}
+    
+    env | grep MATL
+endif
+
+#
+# Amesim
+#
+
+if ($?env_amesim) then
+    # SITE SPECIFIC -- begin {
+	setenv AME /med/pave360/tools/Amesim/Amesim_v17/Amesim
+    setenv LMS_LICENSE 5053@egc-med-matrouh
+    # SITE SPECIFIC -- } end
+
+    if ( "$MTI_VCO_MODE" == "32" ) then
+        setenv AMELIB lnx
+    else if ( "$MTI_VCO_MODE" == "64" ) then
+        setenv AMELIB lnx_x64
+    endif
+
+    set path = ($AME $path)
+
+    #Amesim v17 libraries break the locally-installed python , since it points to different libraries.
+    #As a workaround, we re-define /usr/lib and /usr/lib64 in LD_LIBRARY_PATH before the Amesim libs
+    setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/usr/lib64:/usr/lib/:${AME}/lnx:${AME}/${AMELIB}
+endif
+
+#
+# Veloce Transactor Library - VTL
+#
+if ($?env_vtl) then
+    # SITE SPECIFIC -- begin {
+    setenv VTL_VER 21.1
+    setenv VELOCE_XACTOR_HOME /med/pave360/tools/VTL/Veloce_Transactors_Library_v$VTL_VER
+    # SITE SPECIFIC -- } end
+    setenv VELOCE_XACTOR_LIB_PLATFORM $UVMC_BUILD_PLATFORM
+endif
+
+#
+# Veloce Hycon
+#
+if ($?env_hycon) then
+    # SITE SPECIFIC -- begin {
+    setenv HYCON_HOME /tools/med_tools/software/hycon_home/hycon_home
+    setenv WARPCORE_HOME $HYCON_HOME/warpcore_home
+    
+    setenv CROSS_TOOLCHAIN /med/pave360/tools/aarch64--glibc--stable-2018.02-2
+    # SITE SPECIFIC -- } end
+    
+    set path = ( $HYCON_HOME/bin $WARPCORE_HOME/bin $path )
+    setenv LD_LIBRARY_PATH $WARPCORE_HOME/lib:${LD_LIBRARY_PATH}
+
+    setenv HYCON_GCCVER 5.3_64
+
+    setenv MGLS_PKGINFO_FILE $HYCON_HOME/mgls/lib/mgc.pkginfo
+
+endif
+
+#
+# CMake and RISC-V tool chain (compiler, linker, assembler, etc. & GDB from standard RISC-V toolchain)
+#
+if ($?env_riscv_gcc) then
+    # SITE SPECIFIC -- begin {
+    setenv CMAKE_PATH /med/pave360/tools/risc-v/setup/install/cmake-3.10.0-Linux-x86_64
+    setenv RI5CY_GNU_TOOLCHAIN_PATH /med/pave360/tools/risc-v/setup/install/ri5cy_gnu_toolchain
+
+    #Needed only when using Codelink
+    if ($?env_codelink) then
+        setenv RISCV_GDB_HOME /med/pave360/tools/risc-v/riscv-gdb-2.31.1
+        setenv MGC_CDL_GDB_OVERRIDE $RISCV_GDB_HOME/bin/gdb
+    endif
+    # SITE SPECIFIC -- } end
+    setenv PATH $CMAKE_PATH/bin:$PATH
+    setenv PATH $RI5CY_GNU_TOOLCHAIN_PATH/bin:$PATH
+
+endif
+
+#
+# QEMU
+#
+
+if ($?env_qemu) then
+    # SITE SPECIFIC -- begin {
+    setenv QEMU_HOME /med/pave360/tools/qemu
+    # SITE SPECIFIC -- } end
+    set path = ( $QEMU_HOME/bin $path )
+endif
+
+#
+# Open vSwitch
+#
+
+if ($?env_openvswitch) then
+    # SITE SPECIFIC -- begin {
+    setenv OVSVER openvswitch-2.11.1
+    setenv OVS_HOME /net/ixvm8/veloce/tools/openvswitch/$OVSVER
+    setenv OVS_SRC
+    setenv OVS_HOST_ETH_DEVICE eth1
+    set path = ( $path $OVS_HOME/bin $OVS_HOME/sbin )
+    # SITE SPECIFIC -- } end
+endif
+
+#
+# Natural Docs - This $ND variable is used by the 'gen_nd' driver script for
+# generating Natural Docs HTML content for UVM-Connect. See that file for
+# an example of general usage for Natual Docs setup.
+#
+
+if ($?env_natural_docs) then
+    # SITE SPECIFIC -- begin {
+    setenv ND /med/pave360/tools/natural_docs
+    setenv HTMLDOC_HOME /med/pave360/tools/htmldoc
+    # SITE SPECIFIC -- } end
+
+    setenv PATH $HTMLDOC_HOME/bin:$PATH
+endif
+

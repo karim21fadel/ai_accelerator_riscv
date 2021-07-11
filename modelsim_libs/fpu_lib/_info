@@ -1,0 +1,1630 @@
+m255
+K4
+z2
+!s11f vlog 2020.4_2 2020.12, Dec  5 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maali/ai_accelerator_riscv
+vadders
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 DXx4 work 13 fpu_defs_fmac 0 22 872kfOZBOYKLE]a2Ub6g82
+DXx4 work 14 adders_sv_unit 0 22 Wek91cIlazZ4k3a61^VQO2
+Z3 !s110 1626036712
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 A8>cI2mZo7lKmdoK[McKe1
+IcOI_^9PCDRCBeS<FS5lni2
+!s105 adders_sv_unit
+S1
+R0
+Z5 w1621771019
+Z6 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/adders.sv
+Z7 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/adders.sv
+!i122 28
+L0 33 51
+Z8 OL;L;2020.4_2;71
+31
+Z9 !s108 1626036712.000000
+Z10 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/adders.sv|
+Z11 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/adders.sv|
+!i113 0
+Z12 o-suppress 2583 -quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -suppress 2583 -quiet -sv -svinputport=net -work /home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib +incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 tCvgOpt 0
+Xadders_sv_unit
+R1
+R2
+R3
+VWek91cIlazZ4k3a61^VQO2
+r1
+!s85 0
+!i10b 1
+!s100 5Gg5@M]X_0bMOAAL:TNBG2
+IWek91cIlazZ4k3a61^VQO2
+!i103 1
+S1
+R0
+R5
+R6
+R7
+!i122 28
+Z15 L0 31 0
+R8
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R14
+valigner
+R1
+R2
+DXx4 work 15 aligner_sv_unit 0 22 TP]hW7]MkK`WR:jXNcA]53
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 a5<[OL<U@?V[NUOHd2B7Y2
+IGmeeRC9d0^_EHVQJnfN:]2
+!s105 aligner_sv_unit
+S1
+R0
+R5
+Z16 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/aligner.sv
+Z17 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/aligner.sv
+!i122 26
+L0 33 47
+R8
+31
+R9
+Z18 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/aligner.sv|
+Z19 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/aligner.sv|
+!i113 0
+R12
+R13
+R14
+Xaligner_sv_unit
+R1
+R2
+R3
+VTP]hW7]MkK`WR:jXNcA]53
+r1
+!s85 0
+!i10b 1
+!s100 1CH2eCJiinkDQSMgW>nzH0
+ITP]hW7]MkK`WR:jXNcA]53
+!i103 1
+S1
+R0
+R5
+R16
+R17
+!i122 26
+R15
+R8
+31
+R9
+R18
+R19
+!i113 0
+R12
+R13
+R14
+vbooth_encoder
+R1
+R2
+DXx4 work 21 booth_encoder_sv_unit 0 22 o[8kn`GG>QT;WL<3cdVI13
+Z20 !s110 1626036711
+R4
+r1
+!s85 0
+!i10b 1
+!s100 GAnc40E@X^4e8zL<Jh7n`3
+ICCg^90a6?eBlH^5Y75kMQ1
+!s105 booth_encoder_sv_unit
+S1
+R0
+R5
+Z21 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_encoder.sv
+Z22 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_encoder.sv
+!i122 22
+L0 34 17
+R8
+31
+Z23 !s108 1626036711.000000
+Z24 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_encoder.sv|
+Z25 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_encoder.sv|
+!i113 0
+R12
+R13
+R14
+Xbooth_encoder_sv_unit
+R1
+R2
+R20
+Vo[8kn`GG>QT;WL<3cdVI13
+r1
+!s85 0
+!i10b 1
+!s100 >9<RbIaD75_VHE0GWUo;L3
+Io[8kn`GG>QT;WL<3cdVI13
+!i103 1
+S1
+R0
+R5
+R21
+R22
+!i122 22
+Z26 L0 32 0
+R8
+31
+R23
+R24
+R25
+!i113 0
+R12
+R13
+R14
+vbooth_selector
+R1
+R2
+DXx4 work 22 booth_selector_sv_unit 0 22 fhbGifQMH^69Ybj@?zbBj2
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 Ni<Vk^Oih=k[TNTj`=QK?2
+I?boL:<Q4EL[Tn`BX<HmCb3
+!s105 booth_selector_sv_unit
+S1
+R0
+R5
+Z27 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_selector.sv
+Z28 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_selector.sv
+!i122 23
+L0 34 13
+R8
+31
+R23
+Z29 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_selector.sv|
+Z30 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/booth_selector.sv|
+!i113 0
+R12
+R13
+R14
+Xbooth_selector_sv_unit
+R1
+R2
+R3
+VfhbGifQMH^69Ybj@?zbBj2
+r1
+!s85 0
+!i10b 1
+!s100 ]2gzA<K7b9_15g>S<Qk_o3
+IfhbGifQMH^69Ybj@?zbBj2
+!i103 1
+S1
+R0
+R5
+R27
+R28
+!i122 23
+R26
+R8
+31
+R23
+R29
+R30
+!i113 0
+R12
+R13
+R14
+vcontrol_tp
+R1
+Z31 DXx4 work 20 fpu_defs_div_sqrt_tp 0 22 UlP2cGQlA0jUkM]]4UNn>2
+DXx4 work 18 control_tp_sv_unit 0 22 TYo8fJA:9PTZAJ=nmQ9`B2
+Z32 !s110 1626036710
+R4
+r1
+!s85 0
+!i10b 1
+!s100 j4ilN:Q:CQS;ce?AmnTfT1
+IaA<6R^P>hKWI2Oi[7`jNE0
+!s105 control_tp_sv_unit
+S1
+R0
+R5
+Z33 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv
+Z34 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv
+!i122 13
+L0 36 734
+R8
+31
+Z35 !s108 1626036710.000000
+Z36 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv|
+Z37 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/control_tp.sv|
+!i113 0
+R12
+R13
+R14
+Xcontrol_tp_sv_unit
+R1
+R31
+R32
+VTYo8fJA:9PTZAJ=nmQ9`B2
+r1
+!s85 0
+!i10b 1
+!s100 :ZDGEaWU>oT[<j5JN3QLW1
+ITYo8fJA:9PTZAJ=nmQ9`B2
+!i103 1
+S1
+R0
+R5
+R33
+R34
+!i122 13
+Z38 L0 34 0
+R8
+31
+R35
+R36
+R37
+!i113 0
+R12
+R13
+R14
+vCSA
+R1
+R2
+DXx4 work 11 CSA_sv_unit 0 22 ?MK8F;aZYaKh`G>b[:4cG1
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 HzZ0XYa1e4K1>JA=e64mh0
+I;fB6ej4U]h2KdO54=H`2U3
+!s105 CSA_sv_unit
+S1
+R0
+R5
+Z39 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/CSA.sv
+Z40 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/CSA.sv
+!i122 27
+L0 34 23
+R8
+31
+R9
+Z41 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/CSA.sv|
+Z42 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/CSA.sv|
+!i113 0
+R12
+R13
+R14
+n@c@s@a
+XCSA_sv_unit
+R1
+R2
+R3
+V?MK8F;aZYaKh`G>b[:4cG1
+r1
+!s85 0
+!i10b 1
+!s100 dZMoEEaSHFdHi]62KcXoV3
+I?MK8F;aZYaKh`G>b[:4cG1
+!i103 1
+S1
+R0
+R5
+R39
+R40
+!i122 27
+R26
+R8
+31
+R9
+R41
+R42
+!i113 0
+R12
+R13
+R14
+n@c@s@a_sv_unit
+vdiv_sqrt_top_tp
+R1
+R31
+DXx4 work 23 div_sqrt_top_tp_sv_unit 0 22 f^S_mzW8`Wb6g:keF3ND91
+R20
+R4
+r1
+!s85 0
+!i10b 1
+!s100 8IERFMNUOM:7mi2SXR@Z_2
+ILd^E8dK@KMK2fBmGHHCR83
+!s105 div_sqrt_top_tp_sv_unit
+S1
+R0
+R5
+Z43 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv
+Z44 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv
+!i122 19
+L0 34 126
+R8
+31
+R23
+Z45 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv|
+Z46 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/div_sqrt_top_tp.sv|
+!i113 0
+R12
+R13
+R14
+Xdiv_sqrt_top_tp_sv_unit
+R1
+R31
+R20
+Vf^S_mzW8`Wb6g:keF3ND91
+r1
+!s85 0
+!i10b 1
+!s100 gKHmR=jcS^VgaGSGfeSDQ0
+If^S_mzW8`Wb6g:keF3ND91
+!i103 1
+S1
+R0
+R5
+R43
+R44
+!i122 19
+R26
+R8
+31
+R23
+R45
+R46
+!i113 0
+R12
+R13
+R14
+vfmac
+R1
+R2
+DXx4 work 12 fmac_sv_unit 0 22 cZH6J9<jgi5SAX6VNGFF22
+Z47 !s110 1626036713
+R4
+r1
+!s85 0
+!i10b 1
+!s100 >YcaSJ4:lHQF>H=4YE<K@3
+I[dah@D20Dz;_BzA8>8P==0
+!s105 fmac_sv_unit
+S1
+R0
+R5
+Z48 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fmac.sv
+Z49 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fmac.sv
+!i122 31
+L0 35 188
+R8
+31
+Z50 !s108 1626036713.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fmac.sv|
+Z51 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fmac.sv|
+!i113 0
+R12
+R13
+R14
+Xfmac_sv_unit
+R1
+R2
+R47
+VcZH6J9<jgi5SAX6VNGFF22
+r1
+!s85 0
+!i10b 1
+!s100 cVMBPbd]d@HgZAQWnES153
+IcZH6J9<jgi5SAX6VNGFF22
+!i103 1
+S1
+R0
+R5
+R48
+R49
+!i122 31
+Z52 L0 33 0
+R8
+31
+R50
+Z53 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fmac.sv|
+R51
+!i113 0
+R12
+R13
+R14
+vfp_fma_wrapper
+R1
+R32
+!i10b 1
+!s100 DET6JJidk7Z2K=n?dfaT91
+Z54 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Icg4a2B2V=::JWABDmJOCX1
+S1
+R0
+R5
+8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv
+!i122 11
+L0 42 152
+R4
+R8
+r1
+!s85 0
+31
+Z55 !s108 1626036709.000000
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fp_fma_wrapper.sv|
+!i113 0
+R12
+R13
+R14
+vfpexc
+R1
+Z56 DXx4 work 8 fpu_defs 0 22 LJ=P1B1RiOP8dGO<5CDOL2
+DXx4 work 13 fpexc_sv_unit 0 22 edT2XFGzkS7]O1oI[cFiA1
+Z57 !s110 1626036708
+R4
+r1
+!s85 0
+!i10b 1
+!s100 TS0_24]70n[:EJdWY7hhZ2
+I0_9iTYAJ@?Z4a:mSln`We3
+!s105 fpexc_sv_unit
+S1
+R0
+R5
+Z58 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpexc.sv
+Z59 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpexc.sv
+!i122 2
+L0 37 116
+R8
+31
+Z60 !s108 1626036708.000000
+Z61 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpexc.sv|
+Z62 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpexc.sv|
+!i113 0
+R12
+R13
+R14
+Xfpexc_sv_unit
+R1
+R56
+R57
+VedT2XFGzkS7]O1oI[cFiA1
+r1
+!s85 0
+!i10b 1
+!s100 zZm`RYg>GE8h8A[8ceiKo1
+IedT2XFGzkS7]O1oI[cFiA1
+!i103 1
+S1
+R0
+R5
+R58
+R59
+!i122 2
+Z63 L0 35 0
+R8
+31
+R60
+R61
+R62
+!i113 0
+R12
+R13
+R14
+vfpu_add
+R1
+R56
+DXx4 work 15 fpu_add_sv_unit 0 22 Cj[0LVh92zE8967>PmT@S0
+R57
+R4
+r1
+!s85 0
+!i10b 1
+!s100 WNEO5<M7?VZJAI<CzS[g;1
+I28A9b@VD7``=lHh_hoE7f0
+!s105 fpu_add_sv_unit
+S1
+R0
+R5
+Z64 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_add.sv
+Z65 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_add.sv
+!i122 3
+L0 34 161
+R8
+31
+R60
+Z66 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_add.sv|
+Z67 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_add.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_add_sv_unit
+R1
+R56
+R57
+VCj[0LVh92zE8967>PmT@S0
+r1
+!s85 0
+!i10b 1
+!s100 c;7o[200D0lNGz=Xcd0?52
+ICj[0LVh92zE8967>PmT@S0
+!i103 1
+S1
+R0
+R5
+R64
+R65
+!i122 3
+R26
+R8
+31
+R60
+R66
+R67
+!i113 0
+R12
+R13
+R14
+vfpu_core
+R1
+R56
+DXx4 work 16 fpu_core_sv_unit 0 22 ;HA4c7[cLd?R?k`T9OWN;2
+Z68 !s110 1626036709
+R4
+r1
+!s85 0
+!i10b 1
+!s100 iX<FXW10naRkQTk17IeJH3
+IA7N^3mA34fn_0CeUa5LeO0
+!s105 fpu_core_sv_unit
+S1
+R0
+R5
+Z69 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_core.sv
+Z70 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_core.sv
+!i122 4
+L0 37 327
+R8
+31
+R60
+Z71 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_core.sv|
+Z72 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_core.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_core_sv_unit
+R1
+R56
+R68
+V;HA4c7[cLd?R?k`T9OWN;2
+r1
+!s85 0
+!i10b 1
+!s100 BB9h8l1@U]gSnh?Z4IaQc3
+I;HA4c7[cLd?R?k`T9OWN;2
+!i103 1
+S1
+R0
+R5
+R69
+R70
+!i122 4
+R63
+R8
+31
+R60
+R71
+R72
+!i113 0
+R12
+R13
+R14
+Xfpu_defs
+R1
+R57
+!i10b 1
+!s100 l0X0;VHFII;QSVOfEdMIz1
+R54
+ILJ=P1B1RiOP8dGO<5CDOL2
+S1
+R0
+R5
+8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_defs.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_defs.sv
+!i122 1
+Z73 L0 20 0
+VLJ=P1B1RiOP8dGO<5CDOL2
+R8
+r1
+!s85 0
+31
+R60
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_defs.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_defs.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_defs_div_sqrt_tp
+R1
+R32
+!i10b 1
+!s100 bP;QgVofjTXcOe5`_<Rij0
+R54
+IUlP2cGQlA0jUkM]]4UNn>2
+S1
+R0
+R5
+8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv
+!i122 12
+L0 18 0
+VUlP2cGQlA0jUkM]]4UNn>2
+R8
+r1
+!s85 0
+31
+R35
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_defs_div_sqrt_tp.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_defs_fmac
+R1
+R20
+!i10b 1
+!s100 ]fOYT6ccPzXA6b;V@d<@C0
+R54
+I872kfOZBOYKLE]a2Ub6g82
+S1
+R0
+R5
+8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv
+!i122 20
+R73
+V872kfOZBOYKLE]a2Ub6g82
+R8
+r1
+!s85 0
+31
+R23
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_defs_fmac.sv|
+!i113 0
+R12
+R13
+R14
+vfpu_ff
+R1
+R57
+!i10b 1
+!s100 FeN0nhQBJnM]0^cC_@J6V1
+R54
+In8RPnRn1A=R_=ocVMl:5G0
+S1
+R0
+R5
+8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_utils/fpu_ff.sv
+F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_utils/fpu_ff.sv
+!i122 0
+L0 31 77
+R4
+R8
+r1
+!s85 0
+31
+R60
+!s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_utils/fpu_ff.sv|
+!s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_utils/fpu_ff.sv|
+!i113 0
+R12
+R13
+R14
+vfpu_ftoi
+R1
+R56
+DXx4 work 16 fpu_ftoi_sv_unit 0 22 L`_E`zMQj027J1hOSJ^J93
+R68
+R4
+r1
+!s85 0
+!i10b 1
+!s100 j2M]obbaXBG`zclh=X==:1
+I[d6oB5m?eKICTce;Gdbfm0
+!s105 fpu_ftoi_sv_unit
+S1
+R0
+R5
+Z74 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv
+Z75 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv
+!i122 5
+L0 34 67
+R8
+31
+R55
+Z76 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv|
+Z77 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_ftoi.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_ftoi_sv_unit
+R1
+R56
+R68
+VL`_E`zMQj027J1hOSJ^J93
+r1
+!s85 0
+!i10b 1
+!s100 c6]Q4cTCTa2UUaEF8UzVO3
+IL`_E`zMQj027J1hOSJ^J93
+!i103 1
+S1
+R0
+R5
+R74
+R75
+!i122 5
+R26
+R8
+31
+R55
+R76
+R77
+!i113 0
+R12
+R13
+R14
+vfpu_itof
+R1
+R56
+DXx4 work 16 fpu_itof_sv_unit 0 22 ?7>b4A75mHBeLnH4WDSeQ2
+R68
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [=<3Jk;6TK@IVS^3GaG:Y3
+IR8;6`?JIIN0_K:PI89fMQ1
+!s105 fpu_itof_sv_unit
+S1
+R0
+R5
+Z78 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_itof.sv
+Z79 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_itof.sv
+!i122 6
+Z80 L0 34 55
+R8
+31
+R55
+Z81 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_itof.sv|
+Z82 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_itof.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_itof_sv_unit
+R1
+R56
+R68
+V?7>b4A75mHBeLnH4WDSeQ2
+r1
+!s85 0
+!i10b 1
+!s100 W8V=JgYFH]f?8^C3M`jRP3
+I?7>b4A75mHBeLnH4WDSeQ2
+!i103 1
+S1
+R0
+R5
+R78
+R79
+!i122 6
+R26
+R8
+31
+R55
+R81
+R82
+!i113 0
+R12
+R13
+R14
+vfpu_mult
+R1
+R56
+DXx4 work 16 fpu_mult_sv_unit 0 22 0`JCHIiT1Rc3S4Nik0`F03
+R68
+R4
+r1
+!s85 0
+!i10b 1
+!s100 8`Y_R`R8E4j2iVABhDY3f3
+IAHQZ6eVe]bCK2UPF[NzPG3
+!s105 fpu_mult_sv_unit
+S1
+R0
+R5
+Z83 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_mult.sv
+Z84 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_mult.sv
+!i122 7
+R80
+R8
+31
+R55
+Z85 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_mult.sv|
+Z86 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_mult.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_mult_sv_unit
+R1
+R56
+R68
+V0`JCHIiT1Rc3S4Nik0`F03
+r1
+!s85 0
+!i10b 1
+!s100 ;WI3FL58O8_aMEe7@K7661
+I0`JCHIiT1Rc3S4Nik0`F03
+!i103 1
+S1
+R0
+R5
+R83
+R84
+!i122 7
+R26
+R8
+31
+R55
+R85
+R86
+!i113 0
+R12
+R13
+R14
+vfpu_norm
+R1
+R56
+DXx4 work 16 fpu_norm_sv_unit 0 22 [?9`_HUJIKe]=Ymg;eLP32
+R68
+R4
+r1
+!s85 0
+!i10b 1
+!s100 LWZbdlM[[zeg^EB=hH>h`2
+I]R^FzbjRTfRXCa>I><^:R1
+!s105 fpu_norm_sv_unit
+S1
+R0
+R5
+Z87 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_norm.sv
+Z88 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_norm.sv
+!i122 8
+L0 35 150
+R8
+31
+R55
+Z89 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_norm.sv|
+Z90 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_norm.sv|
+!i113 0
+R12
+R13
+R14
+vfpu_norm_div_sqrt
+R1
+R31
+DXx4 work 25 fpu_norm_div_sqrt_sv_unit 0 22 27QKCzX0aXUbb=BHlcbhz0
+R32
+R4
+r1
+!s85 0
+!i10b 1
+!s100 o][YV8?NX34BgHVT_79Hm3
+IDGmhgdXQ4Y_ge`acfY<LY3
+!s105 fpu_norm_div_sqrt_sv_unit
+S1
+R0
+R5
+Z91 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv
+Z92 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv
+!i122 14
+L0 44 324
+R8
+31
+R35
+Z93 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv|
+Z94 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/fpu_norm_div_sqrt.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_norm_div_sqrt_sv_unit
+R1
+R31
+R32
+V27QKCzX0aXUbb=BHlcbhz0
+r1
+!s85 0
+!i10b 1
+!s100 UY`eaij0[=eg4gf^Vn]0h1
+I27QKCzX0aXUbb=BHlcbhz0
+!i103 1
+S1
+R0
+R5
+R91
+R92
+!i122 14
+L0 42 0
+R8
+31
+R35
+R93
+R94
+!i113 0
+R12
+R13
+R14
+vfpu_norm_fmac
+R1
+R2
+DXx4 work 21 fpu_norm_fmac_sv_unit 0 22 [EPU?O_TM^R4RS>4d]`W73
+R47
+R4
+r1
+!s85 0
+!i10b 1
+!s100 315B4hEIcT:ao3;mckW?d1
+IAg7[7KaRTjf]h][Va[[mJ0
+!s105 fpu_norm_fmac_sv_unit
+S1
+R0
+R5
+Z95 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv
+Z96 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv
+!i122 30
+L0 35 308
+R8
+31
+R50
+Z97 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv|
+Z98 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/fpu_norm_fmac.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_norm_fmac_sv_unit
+R1
+R2
+R47
+V[EPU?O_TM^R4RS>4d]`W73
+r1
+!s85 0
+!i10b 1
+!s100 68F0ago3SkenQzb=C5oYc2
+I[EPU?O_TM^R4RS>4d]`W73
+!i103 1
+S1
+R0
+R5
+R95
+R96
+!i122 30
+R52
+R8
+31
+R50
+R97
+R98
+!i113 0
+R12
+R13
+R14
+Xfpu_norm_sv_unit
+R1
+R56
+R68
+V[?9`_HUJIKe]=Ymg;eLP32
+r1
+!s85 0
+!i10b 1
+!s100 A@WUH<a60ff<1:c^LOTQ?3
+I[?9`_HUJIKe]=Ymg;eLP32
+!i103 1
+S1
+R0
+R5
+R87
+R88
+!i122 8
+R52
+R8
+31
+R55
+R89
+R90
+!i113 0
+R12
+R13
+R14
+vfpu_private
+R1
+R56
+DXx4 work 19 fpu_private_sv_unit 0 22 We2RGRLFFYfnAQOdG2a^m0
+R68
+R4
+r1
+!s85 0
+!i10b 1
+!s100 D<[i[e9<3F:]JD:35AAY32
+I`7ljSP7iWWfERdjh?2Ld11
+!s105 fpu_private_sv_unit
+S1
+R0
+R5
+Z99 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_private.sv
+Z100 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_private.sv
+!i122 9
+L0 36 204
+R8
+31
+R55
+Z101 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_private.sv|
+Z102 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/fpu_private.sv|
+!i113 0
+R12
+R13
+R14
+Xfpu_private_sv_unit
+R1
+R56
+R68
+VWe2RGRLFFYfnAQOdG2a^m0
+r1
+!s85 0
+!i10b 1
+!s100 bY^I;aljiHG03aV5L3fd@2
+IWe2RGRLFFYfnAQOdG2a^m0
+!i103 1
+S1
+R0
+R5
+R99
+R100
+!i122 9
+R38
+R8
+31
+R55
+R101
+R102
+!i113 0
+R12
+R13
+R14
+viteration_div_sqrt
+R1
+R31
+DXx4 work 26 iteration_div_sqrt_sv_unit 0 22 aPkM[`M_h^DV0I73dSb5G2
+R32
+R4
+r1
+!s85 0
+!i10b 1
+!s100 F6m_j]WK0KYel7?A:IUfj3
+I>R6j5eFbkz6nV[0A1Tk1Q2
+!s105 iteration_div_sqrt_sv_unit
+S1
+R0
+R5
+Z103 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv
+Z104 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv
+!i122 16
+L0 32 25
+R8
+31
+R35
+Z105 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv|
+Z106 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt.sv|
+!i113 0
+R12
+R13
+R14
+viteration_div_sqrt_first
+R1
+R31
+DXx4 work 32 iteration_div_sqrt_first_sv_unit 0 22 V^HB0KCj=zKH[JmZPh;W53
+R32
+R4
+r1
+!s85 0
+!i10b 1
+!s100 gV>2SVVg7Ue7>_1@4k<W30
+IU>_Y[jRBiAnUaQ[<SXB]G1
+!s105 iteration_div_sqrt_first_sv_unit
+S1
+R0
+R5
+Z107 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv
+Z108 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv
+!i122 15
+L0 32 26
+R8
+31
+R35
+Z109 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv|
+Z110 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/iteration_div_sqrt_first.sv|
+!i113 0
+R12
+R13
+R14
+Xiteration_div_sqrt_first_sv_unit
+R1
+R31
+R32
+VV^HB0KCj=zKH[JmZPh;W53
+r1
+!s85 0
+!i10b 1
+!s100 nGm<hfPg4IoJdNoVHH@T90
+IV^HB0KCj=zKH[JmZPh;W53
+!i103 1
+S1
+R0
+R5
+R107
+R108
+!i122 15
+R15
+R8
+31
+R35
+R109
+R110
+!i113 0
+R12
+R13
+R14
+Xiteration_div_sqrt_sv_unit
+R1
+R31
+R32
+VaPkM[`M_h^DV0I73dSb5G2
+r1
+!s85 0
+!i10b 1
+!s100 OM6H4D=7ojRa@iJG3NN8X3
+IaPkM[`M_h^DV0I73dSb5G2
+!i103 1
+S1
+R0
+R5
+R103
+R104
+!i122 16
+R15
+R8
+31
+R35
+R105
+R106
+!i113 0
+R12
+R13
+R14
+vLZA
+R1
+R2
+DXx4 work 11 LZA_sv_unit 0 22 DBS<`;o:Ofjfohdk[Uz851
+R47
+R4
+r1
+!s85 0
+!i10b 1
+!s100 YSECFc]f3S84f^6^^cMLF0
+IBE5OSUi>zSInTEn[1Ofel0
+!s105 LZA_sv_unit
+S1
+R0
+R5
+Z111 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/LZA.sv
+Z112 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/LZA.sv
+!i122 29
+L0 35 58
+R8
+31
+R9
+Z113 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/LZA.sv|
+Z114 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/LZA.sv|
+!i113 0
+R12
+R13
+R14
+n@l@z@a
+XLZA_sv_unit
+R1
+R2
+R47
+VDBS<`;o:Ofjfohdk[Uz851
+r1
+!s85 0
+!i10b 1
+!s100 51z]<a18zml;dl8H^7o@40
+IDBS<`;o:Ofjfohdk[Uz851
+!i103 1
+S1
+R0
+R5
+R111
+R112
+!i122 29
+R52
+R8
+31
+R9
+R113
+R114
+!i113 0
+R12
+R13
+R14
+n@l@z@a_sv_unit
+vnrbd_nrsc_tp
+R1
+R31
+DXx4 work 20 nrbd_nrsc_tp_sv_unit 0 22 ezRYAK@BQS8PADl:oJF;N1
+R20
+R4
+r1
+!s85 0
+!i10b 1
+!s100 ;O6UQhCL=6oa4jjRoMUSb3
+Ii?G=Zn@4]9;YI;6Sf8c<L1
+!s105 nrbd_nrsc_tp_sv_unit
+S1
+R0
+R5
+Z115 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv
+Z116 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv
+!i122 17
+L0 33 129
+R8
+31
+R35
+Z117 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv|
+Z118 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/nrbd_nrsc_tp.sv|
+!i113 0
+R12
+R13
+R14
+Xnrbd_nrsc_tp_sv_unit
+R1
+R31
+R20
+VezRYAK@BQS8PADl:oJF;N1
+r1
+!s85 0
+!i10b 1
+!s100 E;F^L0UE^Y[:F51GAkRUC0
+IezRYAK@BQS8PADl:oJF;N1
+!i103 1
+S1
+R0
+R5
+R115
+R116
+!i122 17
+R15
+R8
+31
+R35
+R117
+R118
+!i113 0
+R12
+R13
+R14
+vpp_generation
+R1
+R2
+DXx4 work 21 pp_generation_sv_unit 0 22 1Z]@FKoHZS4T8:BY2;`z12
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [i>4V62Xge3`gPfjkJ<W80
+IB2^4`KcRW0^]2KdKKSiXc2
+!s105 pp_generation_sv_unit
+S1
+R0
+R5
+Z119 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/pp_generation.sv
+Z120 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/pp_generation.sv
+!i122 24
+L0 34 66
+R8
+31
+R9
+Z121 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/pp_generation.sv|
+Z122 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/pp_generation.sv|
+!i113 0
+R12
+R13
+R14
+Xpp_generation_sv_unit
+R1
+R2
+R3
+V1Z]@FKoHZS4T8:BY2;`z12
+r1
+!s85 0
+!i10b 1
+!s100 ^[?WRlTd2Sj^d<SlD1zBM2
+I1Z]@FKoHZS4T8:BY2;`z12
+!i103 1
+S1
+R0
+R5
+R119
+R120
+!i122 24
+R26
+R8
+31
+R9
+R121
+R122
+!i113 0
+R12
+R13
+R14
+vpreprocess
+R1
+R31
+DXx4 work 18 preprocess_sv_unit 0 22 <D27Zka0NBJ:l>8`VA?Q31
+R20
+R4
+r1
+!s85 0
+!i10b 1
+!s100 cS[1@K3iL3FSSGH4?_22H3
+I0FmV8V9hP0galY7]H@X<c1
+!s105 preprocess_sv_unit
+S1
+R0
+R5
+Z123 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv
+Z124 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv
+!i122 18
+L0 34 280
+R8
+31
+R23
+Z125 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv|
+Z126 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_div_sqrt_tp_nlp/preprocess.sv|
+!i113 0
+R12
+R13
+R14
+vpreprocess_fmac
+R1
+R2
+DXx4 work 23 preprocess_fmac_sv_unit 0 22 WSgBjE1[=[5N^iZE>9JS30
+R20
+R4
+r1
+!s85 0
+!i10b 1
+!s100 ;NC6M1X_N>JLOZb5lJ7K`0
+I<a2b5k5FJ:79GaX1ic@7_3
+!s105 preprocess_fmac_sv_unit
+S1
+R0
+R5
+Z127 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv
+Z128 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv
+!i122 21
+L0 35 88
+R8
+31
+R23
+Z129 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv|
+Z130 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/preprocess_fmac.sv|
+!i113 0
+R12
+R13
+R14
+Xpreprocess_fmac_sv_unit
+R1
+R2
+R20
+VWSgBjE1[=[5N^iZE>9JS30
+r1
+!s85 0
+!i10b 1
+!s100 XIZ?[8TK7NRjYc9<bidZ;1
+IWSgBjE1[=[5N^iZE>9JS30
+!i103 1
+S1
+R0
+R5
+R127
+R128
+!i122 21
+R52
+R8
+31
+R23
+R129
+R130
+!i113 0
+R12
+R13
+R14
+Xpreprocess_sv_unit
+R1
+R31
+R20
+V<D27Zka0NBJ:l>8`VA?Q31
+r1
+!s85 0
+!i10b 1
+!s100 SJ5adJ2eC:AoPgX^0hg<`2
+I<D27Zka0NBJ:l>8`VA?Q31
+!i103 1
+S1
+R0
+R5
+R123
+R124
+!i122 18
+R26
+R8
+31
+R23
+R125
+R126
+!i113 0
+R12
+R13
+R14
+vriscv_fpu
+R1
+R56
+DXx4 work 17 riscv_fpu_sv_unit 0 22 ;5kSz0Y>1Gkb4IIF4balU3
+R68
+R4
+r1
+!s85 0
+!i10b 1
+!s100 [8Z?2:>=6zF9TQT42nC_02
+Im@1>fT;J?WO=dl0[jBo:W1
+!s105 riscv_fpu_sv_unit
+S1
+R0
+R5
+Z131 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv
+Z132 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv
+!i122 10
+L0 35 98
+R8
+31
+R55
+Z133 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv|
+Z134 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_v0.1/riscv_fpu.sv|
+!i113 0
+R12
+R13
+R14
+Xriscv_fpu_sv_unit
+R1
+R56
+R68
+V;5kSz0Y>1Gkb4IIF4balU3
+r1
+!s85 0
+!i10b 1
+!s100 9m;0cV_9bbc5zj=BzBG1U3
+I;5kSz0Y>1Gkb4IIF4balU3
+!i103 1
+S1
+R0
+R5
+R131
+R132
+!i122 10
+R52
+R8
+31
+R55
+R133
+R134
+!i113 0
+R12
+R13
+R14
+vwallace
+R1
+R2
+DXx4 work 15 wallace_sv_unit 0 22 ZMCQ8[iS7cTCjcX_KVUaO0
+R3
+R4
+r1
+!s85 0
+!i10b 1
+!s100 n?Peb80jTeNdg@]oS>`>H1
+IDIeQ_4lUK^lOOTULEifS>0
+!s105 wallace_sv_unit
+S1
+R0
+R5
+Z135 8/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/wallace.sv
+Z136 F/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/wallace.sv
+!i122 25
+L0 34 43
+R8
+31
+R9
+Z137 !s107 /home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/wallace.sv|
+Z138 !s90 -quiet|-sv|-svinputport=net|-suppress|2583|-work|/home/maali/ai_accelerator_riscv/modelsim_libs/fpu_lib|+incdir+/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/.|/home/maali/ai_accelerator_riscv/risc-v/ips/fpu/hdl/fpu_fmac/wallace.sv|
+!i113 0
+R12
+R13
+R14
+Xwallace_sv_unit
+R1
+R2
+R3
+VZMCQ8[iS7cTCjcX_KVUaO0
+r1
+!s85 0
+!i10b 1
+!s100 =^jhKc@QmD6bBez6]G3z_1
+IZMCQ8[iS7cTCjcX_KVUaO0
+!i103 1
+S1
+R0
+R5
+R135
+R136
+!i122 25
+R26
+R8
+31
+R9
+R137
+R138
+!i113 0
+R12
+R13
+R14

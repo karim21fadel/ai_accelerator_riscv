@@ -1,0 +1,92 @@
+all: clean compile build sim
+
+SRCS = \
+    src/server/BrakingSystemInterfaceModel.cxx \
+    src/server/uart_tb.cxx 
+
+TSRCS = TbxMainOsci.cxx
+
+XL_VIP = $(XL_VIP_HOME)/lib
+XL_VIP_OBJ = $(XL_VIP)/$(XL_BUILD_PLATFORM)/osci
+UVMC_LIB_OBJ = $(UVMC_HOME)/lib/osci/$(UVMC_BUILD_PLATFORM)
+
+TRANSPORT_LIB_SO = 
+
+CFLAGS = \
+    -Wno-unused-function -DSC_INCLUDE_DYNAMIC_PROCESSES
+
+include common.mk
+
+VLAB_UTIL_LIB = -L${VLAB_UTIL}/${XL_BUILD_PLATFORM}/osci -lvlab_util-veloce
+
+INCL += \
+    -I$(SYSTEMC)/include -I$(SYSTEMC_TLM_HOME) -I$(SYSTEMC_TLM_HOME)/tlm_utils \
+
+LDFLAGS += \
+    -Wl,-E -L$(SYSTEMC)/$(SYSC_LIB) -lsystemc -lnsl -ldl -lm -lpthread
+
+TB = ./FabricServer
+TBXLIB = libtbx.a
+
+#-----------------------------------------------------------------------------
+compile: 
+	cp -p veloce.config.BASE veloce.config
+	echo comp -hvl systemc >> veloce.config
+	echo hvl -cpppath `which gcc` >> veloce.config
+	@./risc-v/veloce/vcompile.emu/build_rtl_sim.csh
+	vellib can_lib
+	velmap can_lib can_lib
+	velanalyze -hdl verilog -sv $(HDL_VLOG) -work can_lib
+ifeq ($(CODELINK_ENABLE), 1)
+	velanalyze risc-v/codelink_monitor/cdlMonitor_PULPINO.sv
+endif 
+	velanalyze $(CDL_DEF_FLAG) -hdl verilog $(TB_VLOG)
+	velcomp -top Top
+	cp -p tbxbindings.h dpiheader.h
+
+#-----------------------------------------------------------------------------
+build: $(TBXLIB) $(TB) | $(DEPS) $(TDEPS)
+
+$(TB): $(OBJS) TbxMainOsci.o $(TRANSPORT_LIB_SO) $(UVMC_LIB_SO) $(XL_VIP_LIBS)
+	$(CXX) -o $@ $^ -Wl,--whole-archive $(VLAB_UTIL_LIB) $(CDL_MONITOR_LIB) -Wl,--no-whole-archive \
+		-L. -ltbx $(LDFLAGS)
+
+$(TBXLIB):
+	velhvl -lib $@ $(TBXSVLINK_BUILD_PLATFORM) -sim veloce -cpppath $(GNUHOME)/bin/g++
+
+TbxMainOsci.cxx: $(XL_VIP)/TbxMainOsci.cxx src/server/FabricServer.cxx
+	cat $^ > $@
+
+#-----------------------------------------------------------------------------
+sim: $(TESTS)
+
+ai_accelerator_riscv: uart-xterm
+	mkdir -p tmp
+	echo "#!/bin/csh" > runLocalServer.csh
+	echo source Env.script >> runLocalServer.csh
+	echo velrun -exe $(TB) \
+		-do run_osci.tcl \
+		2>&1 | tee check.$@.transcript >> runLocalServer.csh
+	chmod 775 runLocalServer.csh
+	./runLocalServer.csh | tee check.$@.transcript
+
+#-----------------------------------------------------------------------------
+simxwave: uart-xterm
+	mkdir -p tmp
+	velrun -exe $(TB) -do run_osci_xwave.tcl \
+
+#-----------------------------------------------------------------------------
+simvis: uart-xterm
+	mkdir -p tmp
+	velrun -exe $(TB) \
+		-do scripts/run.genWavesOsci.do 2>&1 | tee check.$@.transcript
+	velwavegen -tracedir veloce.wave/waves.stw
+	# Now run 'guivis:' target to view waveforms in Visualizer
+
+#-----------------------------------------------------------------------------
+download:
+	velrun -download
+
+disconnect:
+	velrun -disconnect
+

@@ -1,0 +1,160 @@
+m255
+K4
+z2
+!s11f vlog 2020.4_2 2020.12, Dec  5 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/maali/ai_accelerator_riscv
+T_opt
+!s110 1626036761
+V6GT3ml2?1OD<;zFfi:Mm`1
+04 3 4 work Top fast 0
+04 12 0 work FabricServer 0
+=1-44a84206f3cb-60eb5a16-bc994-f50f
+o-quiet -auto_acc_if_foreign -work work -L work -L can_lib -L pulpino_lib -L axi_node_lib -L apb_node_lib -L axi_mem_if_DP_lib -L axi_spi_slave_lib -L axi_spi_master_lib -L apb_uart_sv_lib -L apb_gpio_lib -L apb_event_unit_lib -L apb_spi_master_lib -L fpu_lib -L apb_pulpino_lib -L apb_fll_if_lib -L core2axi_lib -L apb_timer_lib -L apb_dac_lib -L axi2apb_lib -L apb_i2c_lib -L axi_slice_dc_lib -L riscv_lib -L apb_uart_lib -L axi_slice_lib -L adv_dbg_if_lib -L apb2per_lib -suppress 6627,3009 +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4_2;71
+sFabricServer
+R0
+vIJGkAS+3bljsipglzcGoMQ==
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 DXx4 work 14 pa_can_sv_unit 0 22 43_Eh7^3?hEN8SH7[_SI]2
+Z4 !s110 1626036743
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 PT@9fLGSDW?;lFY22J_@U2
+Ij;z=<IB^koo4z6MHI5Xlm3
+!i8a 1183638304
+Z6 !s105 pa_can_sv_unit
+S1
+R0
+Z7 w1626036743
+Z8 8risc-v/rtl/can/pa_can.sv
+Z9 Frisc-v/rtl/can/pa_can.sv
+!i122 0
+L0 411 44
+Z10 OL;L;2020.4_2;71
+31
+Z11 !s108 1626036743.000000
+Z12 !s107 risc-v/rtl/can/pa_define.v|Top.sv|risc-v/rtl/can/pa_can.sv|
+Z13 !s90 -sv|-dpiheader|dpiheader.h|risc-v/rtl/can/pa_can.sv|Top.sv|
+!i113 0
+Z14 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+ncde4c2
+v4lXVlLRQ2OjNYT/HOqY/wEV/EcAzvqIsIY9gtYtFZNY=
+R2
+R3
+R4
+R5
+r1
+!s85 0
+!i10b 1
+!s100 3LaNA<]LJX`=N4SR;S>3f1
+IGFRAaU2^^Bnb`bXgX9e9^0
+!i8a 1957756368
+R6
+S1
+R0
+R7
+R8
+R9
+!i122 0
+L0 24 23
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R1
+neeb90e2
+Xpa_can_sv_unit
+R2
+R4
+V43_Eh7^3?hEN8SH7[_SI]2
+r1
+!s85 0
+!i10b 1
+!s100 ?;<ahjf>IZ9:N:DlK?k5W2
+I43_Eh7^3?hEN8SH7[_SI]2
+!i103 1
+!i119 1
+S1
+R0
+w1621771018
+R8
+R9
+Frisc-v/rtl/can/pa_define.v
+!i122 0
+L0 9 0
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R1
+vsz3It1mI8isnyLOxSI9F0g==
+R2
+R3
+R4
+R5
+r1
+!s85 0
+!i10b 1
+!s100 J;7V309g@[:JOY64mNSJH0
+Ibaf[i?hlTVzSMEz8XE_3S0
+!i8a 1445561568
+R6
+S1
+R0
+R7
+R8
+R9
+!i122 0
+L0 725 27
+R10
+31
+R11
+R12
+R13
+!i113 0
+R14
+R1
+n9237a2
+vTop
+R2
+R4
+!i10b 1
+!s100 6YlRP8@CTNR6F679iQ<IJ3
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+Ii3[Oh_Egi2lJEL=7S2Ta[0
+S1
+R0
+w1621771048
+8Top.sv
+FTop.sv
+!i122 0
+L0 20 119
+R5
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R1
+n@top

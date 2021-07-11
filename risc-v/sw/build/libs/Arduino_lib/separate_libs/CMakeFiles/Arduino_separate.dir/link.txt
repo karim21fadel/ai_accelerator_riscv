@@ -1,0 +1,2 @@
+/med/pave360/tools/risc-v/setup/install/ri5cy_gnu_toolchain/bin/riscv32-unknown-elf-ar qc libArduino_separate.a  CMakeFiles/Arduino_separate.dir/src/twi.c.o CMakeFiles/Arduino_separate.dir/src/Wire.cpp.o CMakeFiles/Arduino_separate.dir/src/SPI.cpp.o
+/med/pave360/tools/risc-v/setup/install/ri5cy_gnu_toolchain/bin/riscv32-unknown-elf-ranlib libArduino_separate.a

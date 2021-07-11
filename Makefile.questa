@@ -1,0 +1,119 @@
+all: clean compile build sim
+
+XL_SIM_MODE ?= puresim
+
+SRCS = \
+    src/server/BrakingSystemInterfaceModel.cxx \
+    src/server/uart_tb.cxx 
+
+XL_VIP = $(XL_VIP_HOME)/lib
+XL_VIP_OBJ = $(XL_VIP)/$(XL_BUILD_PLATFORM)
+UVMC_LIB_OBJ = $(UVMC_HOME)/lib/questa/$(UVMC_BUILD_PLATFORM)
+
+TRANSPORT_LIB_SO = 
+
+CFLAGS = \
+    -Wno-unused-function \
+    -DSC_INCLUDE_DYNAMIC_PROCESSES
+
+include common.mk
+
+INCL += -I$(MTI_HOME)/include/systemc -I$(MTI_HOME)/include
+
+VLAB_UTIL_LIB = -L${VLAB_UTIL}/${XL_BUILD_PLATFORM}/questa/${MTI_VERSION} -lvlab_util-veloce_questa
+
+#-----------------------------------------------------------------------------
+compile: vlib
+	cp -p veloce.config.BASE veloce.config
+	echo comp -hvl questa >> veloce.config
+ifeq ($(XL_SIM_MODE),puresim)
+	vlib can_lib
+	vmap can_lib can_lib
+	vlog -sv $(HDL_VLOG) -work can_lib
+	@./risc-v/veloce/vcompile.sim/build_rtl_sim.csh
+  ifeq ($(CODELINK_ENABLE), 1)
+	vlog ./risc-v/codelink_monitor/cdlMonitor_PULPINO.sv
+  endif
+	vlog $(CDL_DEF_FLAG) -sv -dpiheader dpiheader.h $(TB_VLOG)
+else
+	@./risc-v/veloce/vcompile.emu/build_rtl_sim.csh
+	vellib can_lib
+	velmap can_lib can_lib
+	velanalyze -hdl verilog -sv $(HDL_VLOG) -work can_lib
+  ifeq ($(CODELINK_ENABLE), 1)
+	velanalyze ./risc-v/codelink_monitor/cdlMonitor_PULPINO.sv
+  endif 
+	velanalyze $(CDL_DEF_FLAG) -hdl verilog -sv $(TB_VLOG)
+	velcomp -top Top
+	cp -p tbxbindings.h dpiheader.h
+endif
+
+vlib: fix_modelsim_ini
+	vlib work
+	vmap work work
+
+#-----------------------------------------------------------------------------
+build: $(OBJS) $(TRANSPORT_LIB_SO) $(UVMC_LIB_SO) $(XL_VIP_LIBS) | $(DEPS) $(TDEPS)
+	sccom $(CFLAGS) $(DEFS) $(INCL) src/server/FabricServer.cxx
+ifeq ($(XL_SIM_MODE),puresim)
+	sccom -link $^ -Wl,--whole-archive $(VLAB_UTIL_LIB) $(CDL_MONITOR_LIB) -Wl,--no-whole-archive \
+            $(LDFLAGS)
+else
+	velhvl -sim veloce -ldflags \
+		"$^ -Wl,--whole-archive $(VLAB_UTIL_LIB) $(CDL_MONITOR_LIB) -Wl,--no-whole-archive $(LDFLAGS)" -cpppath $(GNUHOME)/bin/g++
+endif
+
+#-----------------------------------------------------------------------------
+sim: $(TESTS)
+
+ai_accelerator_riscv: uart-xterm
+	mkdir -p tmp
+ifeq ($(XL_SIM_MODE),puresim)
+	echo "#!/bin/csh" > runLocalServer.csh
+	echo source Env.script >> runLocalServer.csh
+	echo vsim -t ps -voptargs="+acc" -voptargs="-noscelab" Top FabricServer -c -suppress 6627 -suppress 3009 -L work -L can_lib \
+        -L pulpino_lib -L axi_node_lib -L apb_node_lib -L axi_mem_if_DP_lib -L axi_spi_slave_lib \
+        -L axi_spi_master_lib -L apb_uart_sv_lib -L apb_gpio_lib -L apb_event_unit_lib -L apb_spi_master_lib -L fpu_lib -L apb_pulpino_lib -L apb_fll_if_lib \
+        -L core2axi_lib -L apb_timer_lib -L apb_dac_lib -L axi2apb_lib -L apb_i2c_lib -L axi_slice_dc_lib -L riscv_lib -L apb_uart_lib -L axi_slice_lib \
+        -L adv_dbg_if_lib -L apb2per_lib \
+		-do run.do -l check.$@.transcript $(CDL_MONITOR) \
+			>> runLocalServer.csh
+	chmod 775 runLocalServer.csh
+else
+	echo "#!/bin/csh" > runLocalServer.csh
+	echo source Env.script >> runLocalServer.csh
+	echo vsim -t ps -voptargs="+acc" -voptargs="-noscelab" Top FabricServer -c -suppress 6627 -suppress 3009 \
+        -do run_vsim.tcl -l check.$@.transcript $(CDL_MONITOR) \
+			>> runLocalServer.csh
+	chmod 775 runLocalServer.csh
+endif
+	./runLocalServer.csh
+
+#-----------------------------------------------------------------------------
+simvis: uart-xterm
+	mkdir -p tmp
+ifeq ($(XL_SIM_MODE),puresim)
+	vopt +acc Top FabricServer -o snapshot +designfile
+	vsim -t ps -voptargs="+acc" snapshot -c -suppress 3009 \
+		-do run.do -l check.$@.transcript \
+		-qwavedb=+signal+wavefile+memory+report $(CDL_MONITOR)
+else
+	vsim -t ps -voptargs="+acc" -c Top FabricServer -c -suppress 3009 \
+		-do scripts/run.genWavesQuesta.do $(CDL_MONITOR)
+	velwavegen -tracedir veloce.wave/waves.stw
+	# Now run 'guivis:' target to view waveforms in Visualizer
+endif
+
+#-----------------------------------------------------------------------------
+valgrind:
+	mkdir -p tmp
+	vsim -t ps -novopt -voptargs="+acc" Top FabricServer -c \
+		-do run.do -l check.$@.transcript \
+		-valgrind "-v --leak-check=no --gen-suppressions=all --log-file=valgrind.log"
+
+download:
+	velrun -download
+
+disconnect:
+	velrun -disconnect
+

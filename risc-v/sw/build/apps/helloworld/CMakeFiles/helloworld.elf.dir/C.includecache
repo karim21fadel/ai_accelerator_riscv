@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mabdels/egc-med-heliopolis_training/ai_accelerator_riscv/risc-v/sw/apps/helloworld/helloworld.c
+stdio.h
+-
+

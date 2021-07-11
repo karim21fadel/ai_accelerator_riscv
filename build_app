@@ -1,0 +1,9 @@
+rmdir -fr risc-v/sw/build
+mkdir risc-v/sw/build
+cp risc-v/sw/cmake_configure.riscv.gcc.sh risc-v/sw/build
+cd risc-v/sw/build/ 
+./cmake_configure.riscv.gcc.sh 
+make helloworld
+cd -
+cp risc-v/sw/build/apps/helloworld/slm_files/l2_stim.slm src/slm_files/
+cp risc-v/sw/build/apps/helloworld/slm_files/tcdm_bank0.slm src/slm_files/
